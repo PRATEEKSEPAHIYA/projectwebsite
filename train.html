@@ -1,0 +1,1290 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>TRAIN BOOKING</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"  crossorigin="anonymous"/>
+    <script src="https://kit.fontawesome.com/32702421dd.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="train.css" />
+    </head>
+ 
+  <body>
+ <!--navbar-->
+	   
+ <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <style>
+  .navbar-collapse {
+    flex-basis: 0;
+    flex-grow: 0;
+    // For always expanded or extra full navbars, ensure content aligns itself
+    // properly vertically. Can be easily overridden with flex utilities.
+    }
+    .navbar>.container, .navbar>.container-fluid, .navbar>.container-lg, .navbar>.container-md, .navbar>.container-sm, .navbar>.container-xl, .navbar>.container-xxl {
+  display: flex;
+  flex-wrap: inherit;
+  align-items: center;
+  justify-content: space-evenly;
+}
+  </style>
+      <div class="container-fluid" >
+    <img class="img size=100px bg-transparent" src="/images/tmc logo.png"  alt="">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="//127.0.0.1:5500/index.html#"><i class="fa-solid fa-house-chimney"></i>Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="RESERVATION.html"><i class="fa-solid fa-mountain-sun"></i>Camping Reservation</a>
+            </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <i class="fa-solid fa-arrow-down-short-wide"></i>Online bookings
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <li><a class="dropdown-item" href="bus.html"><i class="fa-solid fa-bus p-2" ></i>Bus Booking</i></a></li>
+          <li><a class="dropdown-item" href="train.html"><i class="fa-solid fa-train-subway p-2"></i>Train Booking</a></li>
+          <li><a class="dropdown-item" href="flight.html"><i class="fa-solid fa-plane-departure p-2"></i>Flights Booking</a></li>
+          <li><a class="dropdown-item" href="hotels.html"><i class="fa-solid fa-hotel p-2"></i>Hotels Booking</a></li>
+        </ul>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <i class="fa-solid fa-globe"></i>Tour and packages
+        </a>
+        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+        <li><a class="dropdown-item" href="leh itenary.html"><i class="fa-solid fa-suitcase"></i>Leh-ladakh package</i></a></li>
+        <li><a class="dropdown-item" href="manali package.html"><i class="fa-solid fa-suitcase"></i>Manali package</a></li>
+        <li><a class="dropdown-item" href="spiti kaza.html"><i class="fa-solid fa-suitcase"></i>Spiti-Kaza packages</a></li>
+        <li><a class="dropdown-item" href="dharamshala .html"><i class="fa-solid fa-suitcase"></i>Dharamshala package</a></li>
+        <li><a class="dropdown-item" href="killar.html"><i class="fa-solid fa-suitcase"></i>Killar-kishtawar packages </i></a></li>
+        <li><a class="dropdown-item" href="tirthan.html"><i class="fa-solid fa-suitcase"></i>Tirthan package</a></li>
+        <li><a class="dropdown-item" href="chitkul .html"><i class="fa-solid fa-suitcase"></i>Kinnaur-Chitkul packages</a></li>
+        <li><a class="dropdown-item" href="shimla .html"><i class="fa-solid fa-suitcase"></i>Shimla-kasauli packages</a></li>
+        <li><a class="dropdown-item" href="dalhousie.html"><i class="fa-solid fa-suitcase"></i>Dalhousie-chamba packages</a></li>
+        <li><a class="dropdown-item" href="mandi.html"><i class="fa-solid fa-suitcase"></i>Barot-Mandi packages</a></li>
+      </ul>
+    </li>
+    
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <i class="fa-solid fa-bars"></i>More-Options
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="contact.html"><i class="fa-solid fa-people-arrows-left-right p-2""></i>Contact-us</a></li>
+                <li><a class="dropdown-item" href="enquiry.html"><i class="fa-solid fa-magnifying-glass p-2""></i>Enquiry</a></li>
+                <li><a class="dropdown-item" href="feedback.html"><i class="fa-solid fa-comments p-2""></i>Feedback</a></li>
+          
+              </ul>
+            </li>
+            
+          </ul>
+          
+        </div>
+      </div>
+    </nav>   
+      
+
+    
+
+    <form>
+      <div class="from-to">
+        <h1 class="text-dark">
+          <center><i class="fa-solid fa-train-subway p-2"></i></center>
+          TRAIN BOOKING
+        </h1>
+        <section>
+          <label for="departure">Departure</label>
+          <select name="from" id="departure" required>
+            <option value="1">ATARIA</option>
+            <option value="1">AMBIKA BHAWANI HALT</option>
+            <option value="1">AMB ANDAURA</option>
+            <option value="1">ANGAR</option>
+            <option value="1">ITEHAR</option>
+            <option value="1">ANKAI KILA</option>
+            <option value="1">AMLAI</option>
+            <option value="1">ANGADIPPURAM</option>
+            <option value="1">AMBIAPUR</option>
+            <option value="1">ADESAR</option>
+            <option value="1">ASRANADA</option>
+            <option value="1">ALAPADU</option>
+            <option value="1">AMBAV</option>
+            <option value="1">ARALVAYMOZHI</option>
+            <option value="1">AMBUR</option>
+            <option value="1">ABADA</option>
+            <option value="1">AMBLI ROAD</option>
+            <option value="1">AMBIKESHWAR</option>
+            <option value="1">PATTARAVAKKAM</option>
+            <option value="1">AMBARI FALAKATA</option>
+            <option value="1">BANDRA</option>
+            <option value="1">BARALA</option>
+            <option value="1">BANDAR P H</option>
+            <option value="1">BABINA</option>
+            <option value="1">BALANAGAR</option>
+            <option value="1">BARGACHIA</option>
+            <option value="1">BAAD</option>
+            <option value="1">BARHAUNA HALT</option>
+            <option value="1">BARKA</option>
+            <option value="1">BHADER</option>
+            <option value="1">BALIAKHERI</option>
+            <option value="1">BAP</option>
+            <option value="1">BAGASARA</option>
+            <option value="1">BHAGEGA</option>
+            <option value="1">BAGWADA</option>
+            <option value="1">BARHARAGANI</option>
+            <option value="1">BARAGOPAL</option>
+            <option value="1">BHABHAR</option>
+            <option value="1">BALLENAHALLI</option>
+            <option value="1">BANIHAL</option>
+            <option value="1">KIDDERPORE DOCK</option>
+            <option value="1">CHAKIA</option>
+            <option value="1">BHILAI CABIN</option>
+            <option value="1">CHANDAMETA</option>
+            <option value="1">CHHANERA</option>
+            <option value="1">CHANDA FORT</option>
+            <option value="1">CHHABRA GUGOR</option>
+            <option value="1">CHANPATIA</option>
+            <option value="1">AJAIBPUR</option>
+            <option value="1">CHAKRAJ MAL</option>
+            <option value="1">HOWRAH JN</option>
+            <option value="1">CHHOTA AMBANA</option>
+            <option value="1">CHAMUA</option>
+            <option value="1">KANNUR</option>
+            <option value="1">CHAURADANO</option>
+            <option value="1">CHATRAPUR</option>
+            <option value="1">CHHAPRA JN</option>
+            <option value="1">CHATRAPUR COURT</option>
+            <option value="1">KANYAKUMARI</option>
+            <option value="1">CHAPAGURI</option>
+            <option value="1">KIDDERPORE DOCK</option>
+            <option value="1">CHAKIA</option>
+            <option value="1">BHILAI CABIN</option>
+            <option value="1">CHANDAMETA</option>
+            <option value="1">CHHANERA</option>
+            <option value="1">CHANDA FORT</option>
+            <option value="1">CHHABRA GUGOR</option>
+            <option value="1">CHANPATIA</option>
+            <option value="1">AJAIBPUR</option>
+            <option value="1">CHAKRAJ MAL</option>
+            <option value="1">HOWRAH JN</option>
+            <option value="1">CHHOTA AMBANA</option>
+            <option value="1">CHAMUA</option>
+            <option value="1">KANNUR</option>
+            <option value="1">CHAURADANO</option>
+            <option value="1">CHATRAPUR</option>
+            <option value="1">CHHAPRA JN</option>
+            <option value="1">CHATRAPUR COURT</option>
+            <option value="1">KANYAKUMARI</option>
+            <option value="1">CHAPAGURI</option>
+            <option value="1">KIDDERPORE DOCK</option>
+            <option value="1">CHAKIA</option>
+            <option value="1">BHILAI CABIN</option>
+            <option value="1">CHANDAMETA</option>
+            <option value="1">CHHANERA</option>
+            <option value="1">CHANDA FORT</option>
+            <option value="1">CHHABRA GUGOR</option>
+            <option value="1">CHANPATIA</option>
+            <option value="1">AJAIBPUR</option>
+            <option value="1">CHAKRAJ MAL</option>
+            <option value="1">HOWRAH JN</option>
+            <option value="1">CHHOTA AMBANA</option>
+            <option value="1">CHAMUA</option>
+            <option value="1">KANNUR</option>
+            <option value="1">CHAURADANO</option>
+            <option value="1">CHATRAPUR</option>
+            <option value="1">CHHAPRA JN</option>
+            <option value="1">CHATRAPUR COURT</option>
+            <option value="1">KANYAKUMARI</option>
+            <option value="1">CHAPAGURI</option>
+            <option value="1">FALNA</option>
+            <option value="1">FATEHABAD</option>
+            <option value="1">FATEHA HALT</option>
+            <option value="1">FATEHNAGAR</option>
+            <option value="1">FAKHARPUR HALT</option>
+            <option value="1">FARAH</option>
+            <option value="1">FARRUKHABAD</option>
+            <option value="1">FORBESGANJ</option>
+            <option value="1">FORBEBGANJ</option>
+            <option value="1">FAIZABAD JN</option>
+            <option value="1">FARIDABAD</option>
+            <option value="1">FARIDKOT</option>
+            <option value="1">FARIDABAD NEW TOWN</option>
+            <option value="1">FATEGARH CHURIAN</option>
+            <option value="1">FATEHGARH HARYANA</option>
+            <option value="1">FATEHGARH JODHE</option>
+            <option value="1">FAGUNAGAON</option>
+            <option value="1">FATEHGARH</option>
+            <option value="1">FORT GLOSTER</option>
+            <option value="1">FATEHGARH SAHIB</option>
+            <option value="1">GONDIA JN</option>
+            <option value="1">GUDHA</option>
+            <option value="1">GALAN</option>
+            <option value="1">GEVRA ROAD</option>
+            <option value="1">GANDHINAGAR JAI</option>
+            <option value="1">GOALDIH</option>
+            <option value="1">GANDHINAGAR JAIPUR</option>
+            <option value="1">GANGA DHAM</option>
+            <option value="1">GAIPURA</option>
+            <option value="1">GANGAGHAT</option>
+            <option value="1">GALGALIA</option>
+            <option value="1">GAWNAHA</option>
+            <option value="1">GHUSIA HALT</option>
+            <option value="1">GOUCHHARI</option>
+            <option value="1">GANESHGANJ</option>
+            <option value="1">GAJARA BAHARA</option>
+            <option value="1">GAJU HALT</option>
+            <option value="1">GUAKHRA</option>
+            <option value="1">GHATLA</option>
+            <option value="1">GUNADALA</option>
+            <option value="1">VENKATAGIRI KOTE HALT</option>
+            <option value="1">HARGAON</option>
+            <option value="1">HARWADA</option>
+            <option value="1">BAH</option>
+            <option value="1">HINDUSTAN</option>
+            <option value="1">HARIPPAD</option>
+            <option value="1">HALLIGUDI</option>
+            <option value="1">HOSA AGRAHARA</option>
+            <option value="1">HADALA KHARI</option>
+            <option value="1">HAMIRHATI</option>
+            <option value="1">HINDAUN CITY</option>
+            <option value="1">HAPA</option>
+            <option value="1">HASTAVARMU</option>
+            <option value="1">HAMIRPUR ROAD</option>
+            <option value="1">HASSAN</option>
+            <option value="1">HATHURAN</option>
+            <option value="1">HATIBARI</option>
+            <option value="1">HATI</option>
+            <option value="1">HAUR</option>
+            <option value="1">HABRA</option>
+            <option value="1">INDARA JN</option>
+            <option value="1">MAI HALT</option>
+            <option value="1">IB</option>
+            <option value="1">IBH1</option>
+            <option value="1">IBH2</option>
+            <option value="1">IBH3</option>
+            <option value="1">IBH4</option>
+            <option value="1">IBH5</option>
+            <option value="1">IBH6</option>
+            <option value="1">IBHA</option>
+            <option value="1">IBHC</option>
+            <option value="1">IBHD</option>
+            <option value="1">IBHE</option>
+            <option value="1">IBHF</option>
+            <option value="1">IBHG</option>
+            <option value="1">IBHH</option>
+            <option value="1">INDRABIL</option>
+            <option value="1">ICBN</option>
+            <option value="1">ICHCHANGADU</option>
+            <option value="1">ICHCHANGADU HALT</option>
+            <option value="1">JALNA</option>
+            <option value="1">JALIYA</option>
+            <option value="1">JHALIDA</option>
+            <option value="1">YAMUNA BRIDGE AGRA</option>
+            <option value="1">JALSU</option>
+            <option value="1">JALSU NANAK</option>
+            <option value="1">JADAR</option>
+            <option value="1">JALARGARH</option>
+            <option value="1">JAGESHWAR</option>
+            <option value="1">JAIS</option>
+            <option value="1">JHAJHA</option>
+            <option value="1">JAKANUR</option>
+            <option value="1">JAWALI</option>
+            <option value="1">JALIYA DEVANI</option>
+            <option value="1">JAMNAGAR</option>
+            <option value="1">JAMA</option>
+            <option value="1">JARANGDIH</option>
+            <option value="1">JAORA</option>
+            <option value="1">JANDRAPETA</option>
+            <option value="1">JUNAIR HALT</option>
+            <option value="1">BLOCK HUT K</option>
+            <option value="1">KAURARA</option>
+            <option value="1">KHANDALA</option>
+            <option value="1">KHAIRADIH HALT</option>
+            <option value="1">KADI</option>
+            <option value="1">KUMRADOL</option>
+            <option value="1">KUKKADAM</option>
+            <option value="1">KADIYADRA</option>
+            <option value="1">KODAGANUR</option>
+            <option value="1">KURHAGADA</option>
+            <option value="1">KAGANGARH</option>
+            <option value="1">KALHAR</option>
+            <option value="1">KAIRLA</option>
+            <option value="1">KALIYANGANJ</option>
+            <option value="1">KARANJGAON</option>
+            <option value="1">KHAKHI JALIYA</option>
+            <option value="1">KAIMARKALAN</option>
+            <option value="1">KALLAL</option>
+            <option value="1">KALANAD</option>
+            <option value="1">KALAY</option>
+            <option value="1">LAKHPAT</option>
+            <option value="1">LACHHIPURA</option>
+            <option value="1">LOHARDAGA</option>
+            <option value="1">LAKHOLI</option>
+            <option value="1">LALAGHAT</option>
+            <option value="1">LAKHO</option>
+            <option value="1">LUSHALA</option>
+            <option value="1">LOTANA</option>
+            <option value="1">LOHAPUR</option>
+            <option value="1">LALITPUR</option>
+            <option value="1">LATHI</option>
+            <option value="1">LATH</option>
+            <option value="1">LATIA CABIN</option>
+            <option value="1">LADNUN</option>
+            <option value="1">LAUL</option>
+            <option value="1">LABHA</option>
+            <option value="1">LAIN BAZAR</option>
+            <option value="1">LAMBHUA</option>
+            <option value="1">LIMBODRA</option>
+            <option value="1">LIMBGAON</option>
+            <option value="1">MADHA</option>
+            <option value="1">MAVAL</option>
+            <option value="1">MALHAR</option>
+            <option value="1">MANDI BAMORA</option>
+            <option value="1">MABBI HALT</option>
+            <option value="1">MAHBUBABAD</option>
+            <option value="1">MATANA BUZURG</option>
+            <option value="1">MABAN</option>
+            <option value="1">MACHIYALA</option>
+            <option value="1">MANGULI CHOWDWAR</option>
+            <option value="1">MADDUR</option>
+            <option value="1">MAONDA</option>
+            <option value="1">MATRADHAM HALT</option>
+            <option value="1">MADHAPUR ROAD</option>
+            <option value="1">MADURE</option>
+            <option value="1">MADDURU</option>
+            <option value="1">MATHERAN</option>
+            <option value="1">MAEL</option>
+            <option value="1">MANUR</option>
+            <option value="1">MANGALAGIRI</option>
+            <option value="1">NAGBHIR JN</option>
+            <option value="1">NAGBHIR JN (NG)</option>
+            <option value="1">NAWA CITY</option>
+            <option value="1">NEW ALIPUR (CALCUTTA)</option>
+            <option value="1">NAGDA JN</option>
+            <option value="1">NADA</option>
+            <option value="1">NAGARGALI</option>
+            <option value="1">NAGARGALI</option>
+            <option value="1">NAHIYER</option>
+            <option value="1">NANGI</option>
+            <option value="1">NAKSALBARI</option>
+            <option value="1">NAIK DIH</option>
+            <option value="1">NAL HALT</option>
+            <option value="1">NALPUR</option>
+            <option value="1">NAMRUP</option>
+            <option value="1">NANDGAON ROAD</option>
+            <option value="1">NANA</option>
+            <option value="1">NANDIKUR</option>
+            <option value="1">NARANPUR</option>
+            <option value="1">NOAPARA</option>
+            <option value="1">OBRA A CABIN</option>
+            <option value="1">OBALAPURAM</option>
+            <option value="1">OBRA DAM</option>
+            <option value="1">OBULAVARIPALLI</option>
+            <option value="1">ODHANIYA CHACHA</option>
+            <option value="1">OCHIRA</option>
+            <option value="1">OD</option>
+            <option value="1">OODLABARI</option>
+            <option value="1">ODDAM HATRAM</option>
+            <option value="1">OBAIDULLA GANJ</option>
+            <option value="1">ODHA</option>
+            <option value="1">ONDAGRAM</option>
+            <option value="1">ODUR</option>
+            <option value="1">ODELA</option>
+            <option value="1">OEL</option>
+            <option value="1">ONGOLE</option>
+            <option value="1">OORGAUM</option>
+            <option value="1">OHANCABIN</option>
+            <option value="1">OKHLA</option>
+            <option value="1">OKHLA CABIN</option>
+            <option value="1">PUNE DIESEL LOCO SHED</option>
+            <option value="1">PATAS</option>
+            <option value="1">PALA</option>
+            <option value="1">PATTABIRAM</option>
+            <option value="1">PALIYARD ROAD</option>
+            <option value="1">PARDI</option>
+            <option value="1">PIPRADIH</option>
+            <option value="1">PADIL</option>
+            <option value="1">PALANA</option>
+            <option value="1">PENNADA AGRAHARAM</option>
+            <option value="1">PURA HALT</option>
+            <option value="1">PABAI</option>
+            <option value="1">PALI A</option>
+            <option value="1">PARAJ</option>
+            <option value="1">PAKALA JN</option>
+            <option value="1">PANAHKULAM</option>
+            <option value="1">PALASNER</option>
+            <option value="1">PALI</option>
+            <option value="1">PALAIYAM</option>
+            <option value="1">PALUR</option>
+            <option value="1">QUBARWALA</option>
+            <option value="1">QCAB</option>
+            <option value="1">QADIAN</option>
+            <option value="1">QUAZIAND</option>
+            <option value="1">KOLAGHAT</option>
+            <option value="1">QUILANDI</option>
+            <option value="1">KULEM</option>
+            <option value="1">KOLLAM JN</option>
+            <option value="1">KALLAR</option>
+            <option value="1">KAYAMSAR</option>
+            <option value="1">KILA RAIPUR</option>
+            <option value="1">QUARRY SDG</option>
+            <option value="1">KANSRAO</option>
+            <option value="1">QUATABPUR</option>
+            <option value="1">KOTHARA</option>
+            <option value="1">KUCHESAR ROAD</option>
+            <option value="1">RAIPUR JN</option>
+            <option value="1">RAMPARDA</option>
+            <option value="1">BARARA</option>
+            <option value="1">RABALE</option>
+            <option value="1">RAIGIR</option>
+            <option value="1">RAJAGAMBIRAM</option>
+            <option value="1">RAMGARH</option>
+            <option value="1">RAHA</option>
+            <option value="1">RAIBHA</option>
+            <option value="1">RAIRAKHOL</option>
+            <option value="1">RAJPIPLA</option>
+            <option value="1">RAJAPUR ROAD</option>
+            <option value="1">RAJUR</option>
+            <option value="1">RAMKOT</option>
+            <option value="1">RADHA KUND</option>
+            <option value="1">RETHORAKALAN</option>
+            <option value="1">REPALLE</option>
+            <option value="1">RAMAPURAM</option>
+            <option value="1">RAMVA</option>
+            <option value="1">RAMPURI</option>
+            <option value="1">SHRIRANGAPATNA</option>
+            <option value="1">SALEM JN</option>
+            <option value="1">SATHIAON</option>
+            <option value="1">SANTAMAGULUR</option>
+            <option value="1">SALABAD</option>
+            <option value="1">SANICHARA</option>
+            <option value="1">SONADA</option>
+            <option value="1">SADLA</option>
+            <option value="1">SAIDAPUR</option>
+            <option value="1">SIMARIA</option>
+            <option value="1">SALKHAPUR</option>
+            <option value="1">SANGRUR</option>
+            <option value="1">SAGMA</option>
+            <option value="1">SHRIRAJNAGAR</option>
+            <option value="1">SAPHALE</option>
+            <option value="1">SARAHULA</option>
+            <option value="1">SATHI</option>
+            <option value="1">SAHELI</option>
+            <option value="1">SAHIJPUR</option>
+            <option value="1">SAHERI</option>
+            <option value="1">TANUR</option>
+            <option value="1">TADLA PUSAPALLI</option>
+            <option value="1">TALABURU</option>
+            <option value="1">TATICHERLA</option>
+            <option value="1">TADA</option>
+            <option value="1">TADALI</option>
+            <option value="1">TANGAIL</option>
+            <option value="1">TARAKESWAR</option>
+            <option value="1">TAKAL</option>
+            <option value="1">TAKU</option>
+            <option value="1">TALLA</option>
+            <option value="1">TALL JN</option>
+            <option value="1">TILAIVILAGAM</option>
+            <option value="1">TARANA ROAD</option>
+            <option value="1">TAMNA</option>
+            <option value="1">TAPANG</option>
+            <option value="1">TAPA</option>
+            <option value="1">TURBHE APM COMPLEX</option>
+            <option value="1">THARSA</option>
+            <option value="1">THASRA</option>
+            <option value="1">UPLETA</option>
+            <option value="1">UPPALA</option>
+            <option value="1">UPARIYALA</option>
+            <option value="1">UDAGAMANDALAM</option>
+            <option value="1">UNAWA AITHOR</option>
+            <option value="1">USKA BAZAR</option>
+            <option value="1">AMBALA CITY</option>
+            <option value="1">ULHAS BRIDGE CABIN</option>
+            <option value="1">HUBLI JN</option>
+            <option value="1">UBARNI</option>
+            <option value="1">UMBARGAM ROAD</option>
+            <option value="1">UCHANA</option>
+            <option value="1">UNCHI BASSI</option>
+            <option value="1">UNCHAULIA</option>
+            <option value="1">UCHIPPULI</option>
+            <option value="1">UNCHAHAR JN</option>
+            <option value="1">UDUPI</option>
+            <option value="1">ULTADANGA JN</option>
+            <option value="1">UDGIR</option>
+            <option value="1">UDYAN KHERI</option>
+            <option value="1">BHAGA JN</option>
+            <option value="1">VELAVADAR</option>
+            <option value="1">WARUD</option>
+            <option value="1">VADALI</option>
+            <option value="1">VALLURU HALT</option>
+            <option value="1">BANI</option>
+            <option value="1">VADAPALANJI HALT</option>
+            <option value="1">VARKALA</option>
+            <option value="1">VADAL</option>
+            <option value="1">VADHVANA</option>
+            <option value="1">VAPI</option>
+            <option value="1">VALAPATTANAM</option>
+            <option value="1">VIDYANAGAR</option>
+            <option value="1">VAIKAM ROAD</option>
+            <option value="1">VASAI DABHLA</option>
+            <option value="1">VASO</option>
+            <option value="1">VATLUR</option>
+            <option value="1">VADARILAPADU</option>
+            <option value="1">VAYALAR</option>
+            <option value="1">VILLIYAMBAKKAM</option>
+            <option value="1">BALWA</option>
+            <option value="1">WADALI</option>
+            <option value="1">WADI</option>
+            <option value="1">WADODA</option>
+            <option value="1">WAIR</option>
+            <option value="1">WANI</option>
+            <option value="1">WALTAIR</option>
+            <option value="1">WALTAIR WAGON S</option>
+            <option value="1">MUMBAI (WADI BANDAR)</option>
+            <option value="1">WADHWAN CITY</option>
+            <option value="1">WEST CABIN GAYA</option>
+            <option value="1">WIMCO NAGAR</option>
+            <option value="1">WADI</option>
+            <option value="1">WADRENGDISA</option>
+            <option value="1">WADI CHORD CABIN</option>
+            <option value="1">WADEGAON</option>
+            <option value="1">WADHARVA</option>
+            <option value="1">WANDER JATANA</option>
+            <option value="1">WANDAL</option>
+            <option value="1">WADWAL NAGNATH</option>
+            <option value="1">KSRA IGP CABIN 1</option>
+            <option value="1">KSRA IGP CABIN 2</option>
+            <option value="1">KSRA IGP CABIN 3</option>
+            <option value="1">AMAN LODGE</option>
+            <option value="1">BACHHARPUR</option>
+            <option value="1">BIKRAMGANJ</option>
+            <option value="1">XCBN</option>
+            <option value="1">GOKULNAGAR</option>
+            <option value="1">KAMTA</option>
+            <option value="1">SADIPUR HALT</option>
+            <option value="1">SARVODAYA HALT</option>
+            <option value="1">SOKALI</option>
+            <option value="1">AMRAVATI BYPASS CABIN</option>
+            <option value="1">AMRAVATI OUTER CABIN</option>
+            <option value="1">ANAND BYPASS CABIN</option>
+            <option value="1">ANAND CHORD CABIN</option>
+            <option value="1">ARSIKERE JUNCTION CABIN</option>
+            <option value="1">ALWAR BYPASS CABIN</option>
+            <option value="1">ALWAR CHORD CABIN</option>
+            <option value="1">ALWAR OUTER CABIN</option>
+            <option value="1">YELIYUR</option>
+            <option value="1">YERRAGUNTLA</option>
+            <option value="1">YEULKHED</option>
+            <option value="1">YADAVALLI</option>
+            <option value="1">YAQUTGANJ</option>
+            <option value="1">YATALURU</option>
+            <option value="1">YADUDIH</option>
+            <option value="1">YEDEKUMERI</option>
+            <option value="1">YADALAPUR</option>
+            <option value="1">YEDAMANGALA</option>
+            <option value="1">YEDAPALLI</option>
+            <option value="1">YADVENDRANAGAR</option>
+            <option value="1">YOGENDRA DHAM HALT</option>
+            <option value="1">YUSUFPUR</option>
+            <option value="1">YADGIR</option>
+            <option value="1">YERRA GOPPA HALT</option>
+            <option value="1">YERRAGUDIPAD</option>
+            <option value="1">YELGUR</option>
+            <option value="1">YADUGRAM BH</option>
+            <option value="1">YAMUNANAGAR JAGADHARI</option>
+            <option value="1">JHAROLA</option>
+            <option value="1">ZARAP</option>
+            <option value="1">ZAHIRABAD</option>
+            <option value="1">ZAFARABAD JN</option>
+            <option value="1">ZANKHVAV</option>
+            <option value="1">JANGAON</option>
+            <option value="1">ZAMANIA</option>
+            <option value="1">ZINDPURA</option>
+            <option value="1">ZERPUR PALI</option>
+            <option value="1">ZAMPINI</option>
+            <option value="1">ZANGALAPALLE</option>
+            <option value="1">ZORAWAR PURA HALT</option>
+            <option value="1">JHAJHPOR</option>
+            <option value="1">ZIRADEI</option>
+            <option value="1">JIRADEI</option>
+            <option value="1">ZAWAR</option>
+            <option value="1">BHAGALPUR</option>
+          </select>
+        </section>
+
+        <section>
+          <label for="destination">Destination</label>
+          <select name="to" id="destination" required>
+            <option value="1">ATARIA</option>
+            <option value="1">AMBIKA BHAWANI HALT</option>
+            <option value="1">AMB ANDAURA</option>
+            <option value="1">ANGAR</option>
+            <option value="1">ITEHAR</option>
+            <option value="1">ANKAI KILA</option>
+            <option value="1">AMLAI</option>
+            <option value="1">ANGADIPPURAM</option>
+            <option value="1">AMBIAPUR</option>
+            <option value="1">ADESAR</option>
+            <option value="1">ASRANADA</option>
+            <option value="1">ALAPADU</option>
+            <option value="1">AMBAV</option>
+            <option value="1">ARALVAYMOZHI</option>
+            <option value="1">AMBUR</option>
+            <option value="1">ABADA</option>
+            <option value="1">AMBLI ROAD</option>
+            <option value="1">AMBIKESHWAR</option>
+            <option value="1">PATTARAVAKKAM</option>
+            <option value="1">AMBARI FALAKATA</option>
+            <option value="1">BANDRA</option>
+            <option value="1">BARALA</option>
+            <option value="1">BANDAR P H</option>
+            <option value="1">BABINA</option>
+            <option value="1">BALANAGAR</option>
+            <option value="1">BARGACHIA</option>
+            <option value="1">BAAD</option>
+            <option value="1">BARHAUNA HALT</option>
+            <option value="1">BARKA</option>
+            <option value="1">BHADER</option>
+            <option value="1">BALIAKHERI</option>
+            <option value="1">BAP</option>
+            <option value="1">BAGASARA</option>
+            <option value="1">BHAGEGA</option>
+            <option value="1">BAGWADA</option>
+            <option value="1">BARHARAGANI</option>
+            <option value="1">BARAGOPAL</option>
+            <option value="1">BHABHAR</option>
+            <option value="1">BALLENAHALLI</option>
+            <option value="1">BANIHAL</option>
+            <option value="1">KIDDERPORE DOCK</option>
+            <option value="1">CHAKIA</option>
+            <option value="1">BHILAI CABIN</option>
+            <option value="1">CHANDAMETA</option>
+            <option value="1">CHHANERA</option>
+            <option value="1">CHANDA FORT</option>
+            <option value="1">CHHABRA GUGOR</option>
+            <option value="1">CHANPATIA</option>
+            <option value="1">AJAIBPUR</option>
+            <option value="1">CHAKRAJ MAL</option>
+            <option value="1">HOWRAH JN</option>
+            <option value="1">CHHOTA AMBANA</option>
+            <option value="1">CHAMUA</option>
+            <option value="1">KANNUR</option>
+            <option value="1">CHAURADANO</option>
+            <option value="1">CHATRAPUR</option>
+            <option value="1">CHHAPRA JN</option>
+            <option value="1">CHATRAPUR COURT</option>
+            <option value="1">KANYAKUMARI</option>
+            <option value="1">CHAPAGURI</option>
+            <option value="1">KIDDERPORE DOCK</option>
+            <option value="1">CHAKIA</option>
+            <option value="1">BHILAI CABIN</option>
+            <option value="1">CHANDAMETA</option>
+            <option value="1">CHHANERA</option>
+            <option value="1">CHANDA FORT</option>
+            <option value="1">CHHABRA GUGOR</option>
+            <option value="1">CHANPATIA</option>
+            <option value="1">AJAIBPUR</option>
+            <option value="1">CHAKRAJ MAL</option>
+            <option value="1">HOWRAH JN</option>
+            <option value="1">CHHOTA AMBANA</option>
+            <option value="1">CHAMUA</option>
+            <option value="1">KANNUR</option>
+            <option value="1">CHAURADANO</option>
+            <option value="1">CHATRAPUR</option>
+            <option value="1">CHHAPRA JN</option>
+            <option value="1">CHATRAPUR COURT</option>
+            <option value="1">KANYAKUMARI</option>
+            <option value="1">CHAPAGURI</option>
+            <option value="1">KIDDERPORE DOCK</option>
+            <option value="1">CHAKIA</option>
+            <option value="1">BHILAI CABIN</option>
+            <option value="1">CHANDAMETA</option>
+            <option value="1">CHHANERA</option>
+            <option value="1">CHANDA FORT</option>
+            <option value="1">CHHABRA GUGOR</option>
+            <option value="1">CHANPATIA</option>
+            <option value="1">AJAIBPUR</option>
+            <option value="1">CHAKRAJ MAL</option>
+            <option value="1">HOWRAH JN</option>
+            <option value="1">CHHOTA AMBANA</option>
+            <option value="1">CHAMUA</option>
+            <option value="1">KANNUR</option>
+            <option value="1">CHAURADANO</option>
+            <option value="1">CHATRAPUR</option>
+            <option value="1">CHHAPRA JN</option>
+            <option value="1">CHATRAPUR COURT</option>
+            <option value="1">KANYAKUMARI</option>
+            <option value="1">CHAPAGURI</option>
+            <option value="1">FALNA</option>
+            <option value="1">FATEHABAD</option>
+            <option value="1">FATEHA HALT</option>
+            <option value="1">FATEHNAGAR</option>
+            <option value="1">FAKHARPUR HALT</option>
+            <option value="1">FARAH</option>
+            <option value="1">FARRUKHABAD</option>
+            <option value="1">FORBESGANJ</option>
+            <option value="1">FORBEBGANJ</option>
+            <option value="1">FAIZABAD JN</option>
+            <option value="1">FARIDABAD</option>
+            <option value="1">FARIDKOT</option>
+            <option value="1">FARIDABAD NEW TOWN</option>
+            <option value="1">FATEGARH CHURIAN</option>
+            <option value="1">FATEHGARH HARYANA</option>
+            <option value="1">FATEHGARH JODHE</option>
+            <option value="1">FAGUNAGAON</option>
+            <option value="1">FATEHGARH</option>
+            <option value="1">FORT GLOSTER</option>
+            <option value="1">FATEHGARH SAHIB</option>
+            <option value="1">GONDIA JN</option>
+            <option value="1">GUDHA</option>
+            <option value="1">GALAN</option>
+            <option value="1">GEVRA ROAD</option>
+            <option value="1">GANDHINAGAR JAI</option>
+            <option value="1">GOALDIH</option>
+            <option value="1">GANDHINAGAR JAIPUR</option>
+            <option value="1">GANGA DHAM</option>
+            <option value="1">GAIPURA</option>
+            <option value="1">GANGAGHAT</option>
+            <option value="1">GALGALIA</option>
+            <option value="1">GAWNAHA</option>
+            <option value="1">GHUSIA HALT</option>
+            <option value="1">GOUCHHARI</option>
+            <option value="1">GANESHGANJ</option>
+            <option value="1">GAJARA BAHARA</option>
+            <option value="1">GAJU HALT</option>
+            <option value="1">GUAKHRA</option>
+            <option value="1">GHATLA</option>
+            <option value="1">GUNADALA</option>
+            <option value="1">VENKATAGIRI KOTE HALT</option>
+            <option value="1">HARGAON</option>
+            <option value="1">HARWADA</option>
+            <option value="1">BAH</option>
+            <option value="1">HINDUSTAN</option>
+            <option value="1">HARIPPAD</option>
+            <option value="1">HALLIGUDI</option>
+            <option value="1">HOSA AGRAHARA</option>
+            <option value="1">HADALA KHARI</option>
+            <option value="1">HAMIRHATI</option>
+            <option value="1">HINDAUN CITY</option>
+            <option value="1">HAPA</option>
+            <option value="1">HASTAVARMU</option>
+            <option value="1">HAMIRPUR ROAD</option>
+            <option value="1">HASSAN</option>
+            <option value="1">HATHURAN</option>
+            <option value="1">HATIBARI</option>
+            <option value="1">HATI</option>
+            <option value="1">HAUR</option>
+            <option value="1">HABRA</option>
+            <option value="1">INDARA JN</option>
+            <option value="1">MAI HALT</option>
+            <option value="1">IB</option>
+            <option value="1">IBH1</option>
+            <option value="1">IBH2</option>
+            <option value="1">IBH3</option>
+            <option value="1">IBH4</option>
+            <option value="1">IBH5</option>
+            <option value="1">IBH6</option>
+            <option value="1">IBHA</option>
+            <option value="1">IBHC</option>
+            <option value="1">IBHD</option>
+            <option value="1">IBHE</option>
+            <option value="1">IBHF</option>
+            <option value="1">IBHG</option>
+            <option value="1">IBHH</option>
+            <option value="1">INDRABIL</option>
+            <option value="1">ICBN</option>
+            <option value="1">ICHCHANGADU</option>
+            <option value="1">ICHCHANGADU HALT</option>
+            <option value="1">JALNA</option>
+            <option value="1">JALIYA</option>
+            <option value="1">JHALIDA</option>
+            <option value="1">YAMUNA BRIDGE AGRA</option>
+            <option value="1">JALSU</option>
+            <option value="1">JALSU NANAK</option>
+            <option value="1">JADAR</option>
+            <option value="1">JALARGARH</option>
+            <option value="1">JAGESHWAR</option>
+            <option value="1">JAIS</option>
+            <option value="1">JHAJHA</option>
+            <option value="1">JAKANUR</option>
+            <option value="1">JAWALI</option>
+            <option value="1">JALIYA DEVANI</option>
+            <option value="1">JAMNAGAR</option>
+            <option value="1">JAMA</option>
+            <option value="1">JARANGDIH</option>
+            <option value="1">JAORA</option>
+            <option value="1">JANDRAPETA</option>
+            <option value="1">JUNAIR HALT</option>
+            <option value="1">BLOCK HUT K</option>
+            <option value="1">KAURARA</option>
+            <option value="1">KHANDALA</option>
+            <option value="1">KHAIRADIH HALT</option>
+            <option value="1">KADI</option>
+            <option value="1">KUMRADOL</option>
+            <option value="1">KUKKADAM</option>
+            <option value="1">KADIYADRA</option>
+            <option value="1">KODAGANUR</option>
+            <option value="1">KURHAGADA</option>
+            <option value="1">KAGANGARH</option>
+            <option value="1">KALHAR</option>
+            <option value="1">KAIRLA</option>
+            <option value="1">KALIYANGANJ</option>
+            <option value="1">KARANJGAON</option>
+            <option value="1">KHAKHI JALIYA</option>
+            <option value="1">KAIMARKALAN</option>
+            <option value="1">KALLAL</option>
+            <option value="1">KALANAD</option>
+            <option value="1">KALAY</option>
+            <option value="1">LAKHPAT</option>
+            <option value="1">LACHHIPURA</option>
+            <option value="1">LOHARDAGA</option>
+            <option value="1">LAKHOLI</option>
+            <option value="1">LALAGHAT</option>
+            <option value="1">LAKHO</option>
+            <option value="1">LUSHALA</option>
+            <option value="1">LOTANA</option>
+            <option value="1">LOHAPUR</option>
+            <option value="1">LALITPUR</option>
+            <option value="1">LATHI</option>
+            <option value="1">LATH</option>
+            <option value="1">LATIA CABIN</option>
+            <option value="1">LADNUN</option>
+            <option value="1">LAUL</option>
+            <option value="1">LABHA</option>
+            <option value="1">LAIN BAZAR</option>
+            <option value="1">LAMBHUA</option>
+            <option value="1">LIMBODRA</option>
+            <option value="1">LIMBGAON</option>
+            <option value="1">MADHA</option>
+            <option value="1">MAVAL</option>
+            <option value="1">MALHAR</option>
+            <option value="1">MANDI BAMORA</option>
+            <option value="1">MABBI HALT</option>
+            <option value="1">MAHBUBABAD</option>
+            <option value="1">MATANA BUZURG</option>
+            <option value="1">MABAN</option>
+            <option value="1">MACHIYALA</option>
+            <option value="1">MANGULI CHOWDWAR</option>
+            <option value="1">MADDUR</option>
+            <option value="1">MAONDA</option>
+            <option value="1">MATRADHAM HALT</option>
+            <option value="1">MADHAPUR ROAD</option>
+            <option value="1">MADURE</option>
+            <option value="1">MADDURU</option>
+            <option value="1">MATHERAN</option>
+            <option value="1">MAEL</option>
+            <option value="1">MANUR</option>
+            <option value="1">MANGALAGIRI</option>
+            <option value="1">NAGBHIR JN</option>
+            <option value="1">NAGBHIR JN (NG)</option>
+            <option value="1">NAWA CITY</option>
+            <option value="1">NEW ALIPUR (CALCUTTA)</option>
+            <option value="1">NAGDA JN</option>
+            <option value="1">NADA</option>
+            <option value="1">NAGARGALI</option>
+            <option value="1">NAGARGALI</option>
+            <option value="1">NAHIYER</option>
+            <option value="1">NANGI</option>
+            <option value="1">NAKSALBARI</option>
+            <option value="1">NAIK DIH</option>
+            <option value="1">NAL HALT</option>
+            <option value="1">NALPUR</option>
+            <option value="1">NAMRUP</option>
+            <option value="1">NANDGAON ROAD</option>
+            <option value="1">NANA</option>
+            <option value="1">NANDIKUR</option>
+            <option value="1">NARANPUR</option>
+            <option value="1">NOAPARA</option>
+            <option value="1">OBRA A CABIN</option>
+            <option value="1">OBALAPURAM</option>
+            <option value="1">OBRA DAM</option>
+            <option value="1">OBULAVARIPALLI</option>
+            <option value="1">ODHANIYA CHACHA</option>
+            <option value="1">OCHIRA</option>
+            <option value="1">OD</option>
+            <option value="1">OODLABARI</option>
+            <option value="1">ODDAM HATRAM</option>
+            <option value="1">OBAIDULLA GANJ</option>
+            <option value="1">ODHA</option>
+            <option value="1">ONDAGRAM</option>
+            <option value="1">ODUR</option>
+            <option value="1">ODELA</option>
+            <option value="1">OEL</option>
+            <option value="1">ONGOLE</option>
+            <option value="1">OORGAUM</option>
+            <option value="1">OHANCABIN</option>
+            <option value="1">OKHLA</option>
+            <option value="1">OKHLA CABIN</option>
+            <option value="1">PUNE DIESEL LOCO SHED</option>
+            <option value="1">PATAS</option>
+            <option value="1">PALA</option>
+            <option value="1">PATTABIRAM</option>
+            <option value="1">PALIYARD ROAD</option>
+            <option value="1">PARDI</option>
+            <option value="1">PIPRADIH</option>
+            <option value="1">PADIL</option>
+            <option value="1">PALANA</option>
+            <option value="1">PENNADA AGRAHARAM</option>
+            <option value="1">PURA HALT</option>
+            <option value="1">PABAI</option>
+            <option value="1">PALI A</option>
+            <option value="1">PARAJ</option>
+            <option value="1">PAKALA JN</option>
+            <option value="1">PANAHKULAM</option>
+            <option value="1">PALASNER</option>
+            <option value="1">PALI</option>
+            <option value="1">PALAIYAM</option>
+            <option value="1">PALUR</option>
+            <option value="1">QUBARWALA</option>
+            <option value="1">QCAB</option>
+            <option value="1">QADIAN</option>
+            <option value="1">QUAZIAND</option>
+            <option value="1">KOLAGHAT</option>
+            <option value="1">QUILANDI</option>
+            <option value="1">KULEM</option>
+            <option value="1">KOLLAM JN</option>
+            <option value="1">KALLAR</option>
+            <option value="1">KAYAMSAR</option>
+            <option value="1">KILA RAIPUR</option>
+            <option value="1">QUARRY SDG</option>
+            <option value="1">KANSRAO</option>
+            <option value="1">QUATABPUR</option>
+            <option value="1">KOTHARA</option>
+            <option value="1">KUCHESAR ROAD</option>
+            <option value="1">RAIPUR JN</option>
+            <option value="1">RAMPARDA</option>
+            <option value="1">BARARA</option>
+            <option value="1">RABALE</option>
+            <option value="1">RAIGIR</option>
+            <option value="1">RAJAGAMBIRAM</option>
+            <option value="1">RAMGARH</option>
+            <option value="1">RAHA</option>
+            <option value="1">RAIBHA</option>
+            <option value="1">RAIRAKHOL</option>
+            <option value="1">RAJPIPLA</option>
+            <option value="1">RAJAPUR ROAD</option>
+            <option value="1">RAJUR</option>
+            <option value="1">RAMKOT</option>
+            <option value="1">RADHA KUND</option>
+            <option value="1">RETHORAKALAN</option>
+            <option value="1">REPALLE</option>
+            <option value="1">RAMAPURAM</option>
+            <option value="1">RAMVA</option>
+            <option value="1">RAMPURI</option>
+            <option value="1">SHRIRANGAPATNA</option>
+            <option value="1">SALEM JN</option>
+            <option value="1">SATHIAON</option>
+            <option value="1">SANTAMAGULUR</option>
+            <option value="1">SALABAD</option>
+            <option value="1">SANICHARA</option>
+            <option value="1">SONADA</option>
+            <option value="1">SADLA</option>
+            <option value="1">SAIDAPUR</option>
+            <option value="1">SIMARIA</option>
+            <option value="1">SALKHAPUR</option>
+            <option value="1">SANGRUR</option>
+            <option value="1">SAGMA</option>
+            <option value="1">SHRIRAJNAGAR</option>
+            <option value="1">SAPHALE</option>
+            <option value="1">SARAHULA</option>
+            <option value="1">SATHI</option>
+            <option value="1">SAHELI</option>
+            <option value="1">SAHIJPUR</option>
+            <option value="1">SAHERI</option>
+            <option value="1">TANUR</option>
+            <option value="1">TADLA PUSAPALLI</option>
+            <option value="1">TALABURU</option>
+            <option value="1">TATICHERLA</option>
+            <option value="1">TADA</option>
+            <option value="1">TADALI</option>
+            <option value="1">TANGAIL</option>
+            <option value="1">TARAKESWAR</option>
+            <option value="1">TAKAL</option>
+            <option value="1">TAKU</option>
+            <option value="1">TALLA</option>
+            <option value="1">TALL JN</option>
+            <option value="1">TILAIVILAGAM</option>
+            <option value="1">TARANA ROAD</option>
+            <option value="1">TAMNA</option>
+            <option value="1">TAPANG</option>
+            <option value="1">TAPA</option>
+            <option value="1">TURBHE APM COMPLEX</option>
+            <option value="1">THARSA</option>
+            <option value="1">THASRA</option>
+            <option value="1">UPLETA</option>
+            <option value="1">UPPALA</option>
+            <option value="1">UPARIYALA</option>
+            <option value="1">UDAGAMANDALAM</option>
+            <option value="1">UNAWA AITHOR</option>
+            <option value="1">USKA BAZAR</option>
+            <option value="1">AMBALA CITY</option>
+            <option value="1">ULHAS BRIDGE CABIN</option>
+            <option value="1">HUBLI JN</option>
+            <option value="1">UBARNI</option>
+            <option value="1">UMBARGAM ROAD</option>
+            <option value="1">UCHANA</option>
+            <option value="1">UNCHI BASSI</option>
+            <option value="1">UNCHAULIA</option>
+            <option value="1">UCHIPPULI</option>
+            <option value="1">UNCHAHAR JN</option>
+            <option value="1">UDUPI</option>
+            <option value="1">ULTADANGA JN</option>
+            <option value="1">UDGIR</option>
+            <option value="1">UDYAN KHERI</option>
+            <option value="1">BHAGA JN</option>
+            <option value="1">VELAVADAR</option>
+            <option value="1">WARUD</option>
+            <option value="1">VADALI</option>
+            <option value="1">VALLURU HALT</option>
+            <option value="1">BANI</option>
+            <option value="1">VADAPALANJI HALT</option>
+            <option value="1">VARKALA</option>
+            <option value="1">VADAL</option>
+            <option value="1">VADHVANA</option>
+            <option value="1">VAPI</option>
+            <option value="1">VALAPATTANAM</option>
+            <option value="1">VIDYANAGAR</option>
+            <option value="1">VAIKAM ROAD</option>
+            <option value="1">VASAI DABHLA</option>
+            <option value="1">VASO</option>
+            <option value="1">VATLUR</option>
+            <option value="1">VADARILAPADU</option>
+            <option value="1">VAYALAR</option>
+            <option value="1">VILLIYAMBAKKAM</option>
+            <option value="1">BALWA</option>
+            <option value="1">WADALI</option>
+            <option value="1">WADI</option>
+            <option value="1">WADODA</option>
+            <option value="1">WAIR</option>
+            <option value="1">WANI</option>
+            <option value="1">WALTAIR</option>
+            <option value="1">WALTAIR WAGON S</option>
+            <option value="1">MUMBAI (WADI BANDAR)</option>
+            <option value="1">WADHWAN CITY</option>
+            <option value="1">WEST CABIN GAYA</option>
+            <option value="1">WIMCO NAGAR</option>
+            <option value="1">WADI</option>
+            <option value="1">WADRENGDISA</option>
+            <option value="1">WADI CHORD CABIN</option>
+            <option value="1">WADEGAON</option>
+            <option value="1">WADHARVA</option>
+            <option value="1">WANDER JATANA</option>
+            <option value="1">WANDAL</option>
+            <option value="1">WADWAL NAGNATH</option>
+            <option value="1">KSRA IGP CABIN 1</option>
+            <option value="1">KSRA IGP CABIN 2</option>
+            <option value="1">KSRA IGP CABIN 3</option>
+            <option value="1">AMAN LODGE</option>
+            <option value="1">BACHHARPUR</option>
+            <option value="1">BIKRAMGANJ</option>
+            <option value="1">XCBN</option>
+            <option value="1">GOKULNAGAR</option>
+            <option value="1">KAMTA</option>
+            <option value="1">SADIPUR HALT</option>
+            <option value="1">SARVODAYA HALT</option>
+            <option value="1">SOKALI</option>
+            <option value="1">AMRAVATI BYPASS CABIN</option>
+            <option value="1">AMRAVATI OUTER CABIN</option>
+            <option value="1">ANAND BYPASS CABIN</option>
+            <option value="1">ANAND CHORD CABIN</option>
+            <option value="1">ARSIKERE JUNCTION CABIN</option>
+            <option value="1">ALWAR BYPASS CABIN</option>
+            <option value="1">ALWAR CHORD CABIN</option>
+            <option value="1">ALWAR OUTER CABIN</option>
+            <option value="1">YELIYUR</option>
+            <option value="1">YERRAGUNTLA</option>
+            <option value="1">YEULKHED</option>
+            <option value="1">YADAVALLI</option>
+            <option value="1">YAQUTGANJ</option>
+            <option value="1">YATALURU</option>
+            <option value="1">YADUDIH</option>
+            <option value="1">YEDEKUMERI</option>
+            <option value="1">YADALAPUR</option>
+            <option value="1">YEDAMANGALA</option>
+            <option value="1">YEDAPALLI</option>
+            <option value="1">YADVENDRANAGAR</option>
+            <option value="1">YOGENDRA DHAM HALT</option>
+            <option value="1">YUSUFPUR</option>
+            <option value="1">YADGIR</option>
+            <option value="1">YERRA GOPPA HALT</option>
+            <option value="1">YERRAGUDIPAD</option>
+            <option value="1">YELGUR</option>
+            <option value="1">YADUGRAM BH</option>
+            <option value="1">YAMUNANAGAR JAGADHARI</option>
+            <option value="1">JHAROLA</option>
+            <option value="1">ZARAP</option>
+            <option value="1">ZAHIRABAD</option>
+            <option value="1">ZAFARABAD JN</option>
+            <option value="1">ZANKHVAV</option>
+            <option value="1">JANGAON</option>
+            <option value="1">ZAMANIA</option>
+            <option value="1">ZINDPURA</option>
+            <option value="1">ZERPUR PALI</option>
+            <option value="1">ZAMPINI</option>
+            <option value="1">ZANGALAPALLE</option>
+            <option value="1">ZORAWAR PURA HALT</option>
+            <option value="1">JHAJHPOR</option>
+            <option value="1">ZIRADEI</option>
+            <option value="1">JIRADEI</option>
+            <option value="1">ZAWAR</option>
+            <option value="1">BHAGALPUR</option>
+          </select>
+        </section>
+      </div>
+
+      <div class="date" id="time">
+        <label for="time">Date of departure</label>
+        <input type="date" required />
+      </div>
+      <div class="date" id="time">
+        <label for="time">Date of return</label>
+        <input type="date" />
+      </div>
+
+      <div class="passengers">
+        <section>
+          <label for="adults">Adults</label>
+          <input
+            type="number"
+            id="adults"
+            name="Adults"
+            min="1"
+            max="10"
+            value="1"
+            required
+          />
+        </section>
+        <section>
+          <label for="children">Children</label>
+          <input
+            type="number"
+            id="children"
+            name="children"
+            min="0"
+            max="10"
+            value="0"
+          />
+        </section>
+      </div>
+
+      <div class="info">
+        <section>
+          <label for="mail">e-mail Address</label>
+          <input type="email" name="email" id="mail" required />
+        </section>
+        <section>
+          <label for="phone">Telephone number</label>
+          <input type="tel" name="Phone" id="phone" minlength="10" required />
+        </section>
+      </div>
+
+      <div class="identity">
+        <section>
+          <label for="identity">National Id</label>
+          <input type="text" id="identity" name="National Id" required />
+        </section>
+        <section>
+          <label for="rad">Piece of identity</label>
+          <section>
+            <span>
+              <input
+                type="radio"
+                name="peice"
+                value="adhaaar"
+                id="adhaar"
+                checked
+              />
+              <label for="cin">Adhaar card</label>
+            </span>
+
+            <span>
+              <input type="radio" name="peice" value="Passport" id="pass" />
+              <label for="pass">Passport</label>
+            </span>
+
+            <span>
+              <input
+                type="radio"
+                name="peice"
+                value="drive licence"
+                id="drive"
+              />
+              <label for="drive">Drive licence</label>
+            </span>
+          </section>
+        </section>
+      </div>
+      
+
+      <input type="submit" formaction="payment.html" />
+    </form>
+    <!--FOOTER-->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+   <div class="footer-basic">
+    <style>
+      .footer-basic {
+  padding: 10px 0 ;
+  background-color: white;
+  color:black;
+  margin: 0 0 0 0;
+}
+      </style>
+       <footer>
+           <div class="social"><a href="https://www.instagram.com/accounts/signup"><i class="icon ion-social-instagram"></i></a><a href="https://www.snapchat.com/add/login"><i class="icon ion-social-snapchat"></i></a><a href="https://twitter.com/login"><i class="icon ion-social-twitter"></i></a><a href="https://www.facebook.com/login.php"><i class="icon ion-social-facebook"></i></a></div>
+           <ul class="list-inline">
+               <li class="list-inline-item"><a href="#">Home</a></li>
+               <li class="list-inline-item"><a href="#">Services</a></li>
+               <li class="list-inline-item"><a href="#">About</a></li>
+               <li class="list-inline-item"><a href="terms.html">Terms</a></li>
+               <li class="list-inline-item"><a href="privacy.html">Privacy Policy</a></li>
+               <li class="list-inline-item"><a href="ax.html">FAQ</a></li>
+           </ul>
+           <p class="copyright">thecampingmonk © 2022</p>
+       </footer>
+   </div>	    
+<!-- Back to top button -->
+<button type="button" class="btn btn-danger btn-floating btn-lg" id="btn-back-to-top">
+  <i class="fas fa-arrow-up"></i>
+</button>
+
+
+
+
+
+<!-- Explanation -->
+
+
+   <script>
+   //Get the button
+let mybutton = document.getElementById("btn-back-to-top");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function () {
+scrollFunction();
+};
+
+function scrollFunction() {
+if (
+document.body.scrollTop > 20 ||
+document.documentElement.scrollTop > 20
+) {
+mybutton.style.display = "block";
+} else {
+mybutton.style.display = "none";
+}
+}
+// When the user clicks on the button, scroll to the top of the document
+mybutton.addEventListener("click", backToTop);
+
+function backToTop() {
+document.body.scrollTop = 0;
+document.documentElement.scrollTop = 0;
+}
+</script> 
+  </body>
+</html>

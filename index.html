@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+        rel="stylesheet" crossorigin="anonymous"/>
+		<script src="https://kit.fontawesome.com/32702421dd.js" crossorigin="anonymous"></script>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+        <link rel="stylesheet" href="style.css" />
+        <title>THE CAMPING MONK</title>
+    </head>
+    <body>
+   <!--navbar-->
+	   
+       <nav class="navbar navbar-expand-lg navbar-light bg-light">
+		<style>
+		.navbar-collapse {
+			flex-basis: 0;
+			flex-grow: 0;
+			// For always expanded or extra full navbars, ensure content aligns itself
+			// properly vertically. Can be easily overridden with flex utilities.
+		  }
+		  .navbar>.container, .navbar>.container-fluid, .navbar>.container-lg, .navbar>.container-md, .navbar>.container-sm, .navbar>.container-xl, .navbar>.container-xxl {
+    display: flex;
+    flex-wrap: inherit;
+    align-items: center;
+    justify-content: space-evenly;
+}
+		</style>
+        <div class="container-fluid" >
+			<img class="img size=100px bg-transparent" src="/images/tmc logo.png"  alt="">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+	            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="//127.0.0.1:5500/index.html#"><i class="fa-solid fa-house-chimney"></i>Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="RESERVATION.html"><i class="fa-solid fa-mountain-sun"></i>Camping Reservation</a>
+              </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="fa-solid fa-arrow-down-short-wide"></i>Online bookings
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="bus.html"><i class="fa-solid fa-bus p-2" ></i>Bus Booking</i></a></li>
+            <li><a class="dropdown-item" href="train.html"><i class="fa-solid fa-train-subway p-2"></i>Train Booking</a></li>
+            <li><a class="dropdown-item" href="flight.html"><i class="fa-solid fa-plane-departure p-2"></i>Flights Booking</a></li>
+            <li><a class="dropdown-item" href="hotels.html"><i class="fa-solid fa-hotel p-2"></i>Hotels Booking</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="fa-solid fa-globe"></i>Tour and packages
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <li><a class="dropdown-item" href="leh itenary.html"><i class="fa-solid fa-suitcase"></i>Leh-ladakh package</i></a></li>
+          <li><a class="dropdown-item" href="manali package.html"><i class="fa-solid fa-suitcase"></i>Manali package</a></li>
+          <li><a class="dropdown-item" href="spiti kaza.html"><i class="fa-solid fa-suitcase"></i>Spiti-Kaza packages</a></li>
+          <li><a class="dropdown-item" href="dharamshala .html"><i class="fa-solid fa-suitcase"></i>Dharamshala package</a></li>
+          <li><a class="dropdown-item" href="killar.html"><i class="fa-solid fa-suitcase"></i>Killar-kishtawar packages </i></a></li>
+          <li><a class="dropdown-item" href="tirthan.html"><i class="fa-solid fa-suitcase"></i>Tirthan package</a></li>
+          <li><a class="dropdown-item" href="chitkul .html"><i class="fa-solid fa-suitcase"></i>Kinnaur-Chitkul packages</a></li>
+          <li><a class="dropdown-item" href="shimla .html"><i class="fa-solid fa-suitcase"></i>Shimla-kasauli packages</a></li>
+          <li><a class="dropdown-item" href="dalhousie.html"><i class="fa-solid fa-suitcase"></i>Dalhousie-chamba packages</a></li>
+          <li><a class="dropdown-item" href="mandi.html"><i class="fa-solid fa-suitcase"></i>Barot-Mandi packages</a></li>
+        </ul>
+      </li>
+      
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <i class="fa-solid fa-bars"></i>More-Options
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="contact.html"><i class="fa-solid fa-people-arrows-left-right p-2""></i>Contact-us</a></li>
+                  <li><a class="dropdown-item" href="enquiry.html"><i class="fa-solid fa-magnifying-glass p-2""></i>Enquiry</a></li>
+                  <li><a class="dropdown-item" href="feedback.html"><i class="fa-solid fa-comments p-2""></i>Feedback</a></li>
+            
+                </ul>
+              </li>
+              
+            </ul>
+            
+          </div>
+        </div>
+      </nav>   
+	   
+	  <div class="row g-4">
+	  <div class="card bg-dark text-white text-center">
+		<video class="card-img" autoplay="true" loop="true" muted="" controls="true">
+			<source src="/video/trek.mp4" type="video/mp4">
+		   </video>
+		<div class="card-img-overlay">
+				<div class="position-absolute top-50 start-50 translate-middle" style="background-color: #00000040;">
+							<h1 class="display-1 card-title"><i><b>THE CAMPING MONK</i></b></h1>
+		<div class="clearfix">
+			<form class="btn btn-danger float-left" action="contact.html" method="get" target="_blank">
+				<button type="submit" class="btn btn-danger float-left" >CONTACT US</button>
+				</form>
+				<form class="btn btn-danger float-right" action="loginform.html" method="get" target="_blank">
+			<button type="submit" class="btn btn-danger float-right">LOGIN FORM</button>
+				</form>
+		  </div>
+		</div>
+		  </div>
+	  </div>
+	  </div>
+            <!--navbar END-->
+         <!--showcase-->
+		<section class="bg-light text-dark p-5 p-lg-0 text-center text-sm-start">
+			
+					<div class="row g-4">
+					   
+			<!--flexbox for 1 part upper-->  
+			
+			<div class="d-sm-flex align-items-center justify-content-between">
+				<div class="p-5">
+					<h1>exploring and trekking <span class="text-danger"> VENTURES</span></h1>
+					<p class="lead">THE CAMPING MONK is tour and travel company which provide best tour and camping services in HIMACHAL PRADESH.
+					We provide reservation for hotels, buses , trains , flights and all tourist places. 
+					Contact us for the best packages and  discounts.
+					</p>
+					<button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal"> join us</button>
+					</div>
+				<div>
+					<img class="img-fluid w-60 d-none d-sm-block" src="/images/logo.png" alt="">
+				</div>
+			</div>
+			</div>
+		</section>
+		
+  <!--NEWSLETTER-->
+
+	<div id="parallax-world-of-ugg">
+	<section>
+		<div class="parallax-ten text-center text-light text-uppercase">
+			<section class="bg-transparent text-dark border p-5 m-5 border-1  border-danger m-1 ">
+				<div="d-md-flex  justify-content-between  align-items-center p-3">
+					<h3 class="mb-2 mb-md-3 ">Sign up to get more updates</h3>
+					<div class="input-group news-input m-1 ">
+						<input type="text" class="form-control" placeholder="Enter e-mail address" aria-label="Recipient's username" aria-describedby="button-addon2sss">
+						<button class="btn btn-danger btn-md" type="button" >Sign-up</button>
+					</div>
+				</div>   
+			</section> 
+		</div>
+		</section>
+</div>
+
+      <!--NEWSLETTER  END-->     
+			
+		
+            <!--BOXES-->
+			<div id="parallax-world-of-ugg">
+				<div class="parallax-nine text-center text-light text-uppercase">
+		<section class ="p-5 m-1">
+			<div class="row text-center g-4 ">
+				<div class="col-sm-4 position-relative ">
+					
+					<div class="card-img-overlays"  >
+					 <div class="p-3 m-4" style="background-color: #00000040;">
+						<h3 class="mb-4" class="text-light"> TREKKING </h3> 
+						<p style="font-size:16px" class="text-light"> <b><i>We the camping monk have a team of professional and local guides who can make you people explore new and unotouched valleys and places that exists here and hardly tourist know about that unexpored adventures.</i></b></p>
+						<a href="explore.html" class="btn btn-primary">EXPLORE</a>
+					</div>
+				</div>
+				</div>
+			<!--IMAGE1-->
+				<div class="col-sm-4 position-relative">
+					
+					<div class="card-img-overlays" >
+					<div class="p-4 m-4" style="background-color: #00000040;">
+						<h3 class=" mb-2" class="text-light"> PARAGLIDING </h3> 
+						<p style="font-size:16px"  class="text-light"><b><i>Paragliding is an adventure where two people fly on a single paragliding glider. A super adventurous aero-sport activity which needs a lot of training and experience to operate para-glider safely.</i></b></p>
+						<a href="experience.html" class="btn btn-primary">EXPERIENCE</a>
+					</div> 
+				</div>
+				</div>
+				<div class="col-sm-4 position-relative ">
+		
+					<div class="card-img-overlays" >
+					<div class="p-4 m-4" style="background-color: #00000040;">
+						<h3 class="mb-4" class="text-light"> CAMPING </h3> 
+						<p style="font-size:16px" class="text-light"> <b><i>Camping is an outdoor activity involving overnight stays away from home,either without shelter or using basic shelter such as a tent .To see the majestic views in front of your eyes.</i></b>  </p>
+						<a href="engage.html" class="btn btn-primary">ENGAGE</a>
+					</div>
+					</div>
+				</div>
+			</div>
+	 
+		   </section>
+		   </div>
+		</div>
+
+            <!--ABOUT TREKKING-->
+          
+              <div class=" text-center text-dark text-uppercase">
+		<section class="p-5">
+				<div class="row g-4">
+                    
+					<div class="col-md-5">
+						<img class="img-fluid  d-none d-lg-block" src="/images/tcm1.png" alt="">
+					</div>
+
+					<div class="col-md-7">
+						<h2 class="text-center text-danger mb-4">ABOUT TREKKING AND CAMPING</h2>
+						<p>Triund Trek, Hampta Pass Trek, Bhrigu Lake Trek, Indrahar Pass Trek, Kheerganga Trek, Pin Parvati Trek, Tosh Valley Trek, Kareri Lake Trek, Prashar Lake Trek, Beas Kund Trek, Bhaba Pass Trek, Chanderkhani Pass Trek and many more adventurous treks.
+						Trekking in Himachal generally calls for people of all age groups and levels of expertise with good physical fitness, since the state is home to easy to difficult treks with lenient to steep terrains. While Hampta Pass Trek, Bhrigu Lake Trek, Beas Kund Trek, and Kheerganga Trek offer easy to moderate treks that even first-timers can opt, Indrahar Pass Trek, Pin Parvati Trek, Chanderkhani Pass Trek, and Bhaba Pass Trek offer moderate to difficult treks that make for the most thrilling experiences.
+						The exhilarating trekking places in Himachal manifest diverse landscapes and let you soak in unparalleled views of world-famous breathtaking summits, offering you the chance to not only satisfy your adrenaline rush, but also to achieve a wonderful treat for your eyes in return of your efforts</p>
+					
+					</div>
+					
+				</div>
+			</section>
+    </div>
+				<!--CONTACT US AND MAP-->
+				<div id="parallax-world-of-ugg">
+					<div class="parallax-four text-center text-light text-uppercase">
+			<section class="p-5">
+				<div class="row g-4">
+					<div class="col-md-4">
+						<h2 class="text-center mb-4">CONTACT-INFO</h2>
+						<ul class="list-group list-group-flush lead">
+							<li class="list-group-item">
+								<span class="fw-bold">OFFICE LOCATION:</span>V.P.O Malan ,Teh&Dist Kangra HIMACHAL PRADESH,INDIA
+							</li>
+							<li class="list-group-item">
+								<span class="fw-bold">SITE LOCATION:</span>The paragliding runway point biling
+							</li>
+							<li class="list-group-item">
+								<span class="fw-bold">PHONE NUMBER:</span> +91 8968753377, +91 7834053577
+							</li>
+							<li class="list-group-item">
+								<span class="fw-bold">NAME:</span>GAURAV RANA(@the camping monk)
+							</li>
+							<li class="list-group-item">
+								<span class="fw-bold">e-mail:</span>contact@thecampingmonk.com
+							</li>
+						</ul>
+					</div>
+					<div class="col-md">
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27049.454732353228!2d76.72770546721856!3d32.06433011531508!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3904bed81dfeae35%3A0x16f003fd3cac51a1!2sBiling%2C%20Himachal%20Pradesh!5e0!3m2!1sen!2sin!4v1656575667829!5m2!1sen!2sin" width="1100px" height="500px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+					</div>
+				</div>
+			</section>
+			</div>
+		</div>
+	
+            <!--FOOTER-->
+			<div id="parallax-world-of-ugg">
+				<div class="parallax-nineteen text-center text-light text-uppercase">
+    <div class="footer-basic">
+		        <footer>
+            <div class="social"><a href="https://www.instagram.com/accounts/signup"><i class="icon ion-social-instagram"></i></a><a href="https://www.snapchat.com/add/login">
+				<i class="icon ion-social-snapchat"></i></a><a href="https://twitter.com/login"><i class="icon ion-social-twitter"></i></a><a href="https://www.facebook.com/login.php
+				"><i class="icon ion-social-facebook"></i></a></div>
+            <ul class="list-inline">
+                <li class="list-inline-item"><a href="#">Home</a></li>
+                <li class="list-inline-item"><a href="#">Services</a></li>
+                <li class="list-inline-item"><a href="#">About</a></li>
+                <li class="list-inline-item"><a href="terms.html">Terms</a></li>
+                <li class="list-inline-item"><a href="privacy.html">Privacy Policy</a></li>
+				<li class="list-inline-item"><a href="ax.html">FAQ</a></li>
+            </ul>
+            <p class="copyright">thecampingmonk © 2022</p>
+        </footer>
+    </div>	
+	</div>
+			</div>
+	<!-- Button trigger modal -->
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+    
+       <div class="modal-body">
+                            <p class="lead">Fill form details and we will get back to you</p>
+                            <form>
+                                <div class="mb-3">
+                                    <label for="firt-name" class="col-from-label">FIRST NAME:</label>
+                                    <input type="text" class="form-control" id="first-name"/>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="last-name" class="col-from-label">LAST NAME</label>
+                                    <input type="text" class="form-control" id="last-name"/>        
+                                </div>
+                                <div class="mb-3">
+                                    <label for="phone-number" class="col-from-label">PHONE NUMBER</label>
+                                    <input type="text" class="form-control" id="phone-number"/>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="e-mail" class="col-from-label">E-mail</label>
+                                    <input type="text" class="form-control" id="e-mail"/>
+                                </div>
+                           
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary">SUBMIT</button>
+                                </div>
+                            </form>
+                        </div>
+    </div>
+  </div>
+</div>			
+<!-- Back to top button -->
+<button type="button" class="btn btn-danger btn-floating btn-lg" id="btn-back-to-top">
+	<i class="fas fa-arrow-up"></i>
+  </button>
+    <!-- Explanation -->
+	 <script>
+	 	 //Get the button
+  let mybutton = document.getElementById("btn-back-to-top");
+  
+  // When the user scrolls down 20px from the top of the document, show the button
+  window.onscroll = function () {
+  scrollFunction();
+  };
+  
+  function scrollFunction() {
+  if (
+  document.body.scrollTop > 20 ||
+  document.documentElement.scrollTop > 20
+  ) {
+  mybutton.style.display = "block";
+  } else {
+  mybutton.style.display = "none";
+  }
+  }
+  // When the user clicks on the button, scroll to the top of the document
+  mybutton.addEventListener("click", backToTop);
+  
+  function backToTop() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+  }
+  </script> 																											
+          <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+     
+        crossorigin="anonymous"></script>
+    </body>
+</html> 

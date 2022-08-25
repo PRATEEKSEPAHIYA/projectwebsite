@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>FLIGHT BOOKING</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+        crossorigin="anonymous"/>
+		<script src="https://kit.fontawesome.com/32702421dd.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/32702421dd.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+ 
+    crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="plane.css" />
+  </head>
+  <body>
+     <!--navbar-->
+	   
+     <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <style>
+      .navbar-collapse {
+        flex-basis: 0;
+        flex-grow: 0;
+        // For always expanded or extra full navbars, ensure content aligns itself
+        // properly vertically. Can be easily overridden with flex utilities.
+        }
+        .navbar>.container, .navbar>.container-fluid, .navbar>.container-lg, .navbar>.container-md, .navbar>.container-sm, .navbar>.container-xl, .navbar>.container-xxl {
+      display: flex;
+      flex-wrap: inherit;
+      align-items: center;
+      justify-content: space-evenly;
+  }
+      </style>
+          <div class="container-fluid" >
+        <img class="img size=100px bg-transparent" src="/images/tmc logo.png"  alt="">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="//127.0.0.1:5500/index.html#"><i class="fa-solid fa-house-chimney"></i>Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="RESERVATION.html"><i class="fa-solid fa-mountain-sun"></i>Camping Reservation</a>
+                </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="fa-solid fa-arrow-down-short-wide"></i>Online bookings
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="bus.html"><i class="fa-solid fa-bus p-2" ></i>Bus Booking</i></a></li>
+              <li><a class="dropdown-item" href="train.html"><i class="fa-solid fa-train-subway p-2"></i>Train Booking</a></li>
+              <li><a class="dropdown-item" href="flight.html"><i class="fa-solid fa-plane-departure p-2"></i>Flights Booking</a></li>
+              <li><a class="dropdown-item" href="hotels.html"><i class="fa-solid fa-hotel p-2"></i>Hotels Booking</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="fa-solid fa-globe"></i>Tour and packages
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="leh itenary.html"><i class="fa-solid fa-suitcase"></i>Leh-ladakh package</i></a></li>
+            <li><a class="dropdown-item" href="manali package.html"><i class="fa-solid fa-suitcase"></i>Manali package</a></li>
+            <li><a class="dropdown-item" href="spiti kaza.html"><i class="fa-solid fa-suitcase"></i>Spiti-Kaza packages</a></li>
+            <li><a class="dropdown-item" href="dharamshala .html"><i class="fa-solid fa-suitcase"></i>Dharamshala package</a></li>
+            <li><a class="dropdown-item" href="killar.html"><i class="fa-solid fa-suitcase"></i>Killar-kishtawar packages </i></a></li>
+            <li><a class="dropdown-item" href="tirthan.html"><i class="fa-solid fa-suitcase"></i>Tirthan package</a></li>
+            <li><a class="dropdown-item" href="chitkul .html"><i class="fa-solid fa-suitcase"></i>Kinnaur-Chitkul packages</a></li>
+            <li><a class="dropdown-item" href="shimla .html"><i class="fa-solid fa-suitcase"></i>Shimla-kasauli packages</a></li>
+            <li><a class="dropdown-item" href="dalhousie.html"><i class="fa-solid fa-suitcase"></i>Dalhousie-chamba packages</a></li>
+            <li><a class="dropdown-item" href="mandi.html"><i class="fa-solid fa-suitcase"></i>Barot-Mandi packages</a></li>
+          </ul>
+        </li>
+        
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="fa-solid fa-bars"></i>More-Options
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="contact.html"><i class="fa-solid fa-people-arrows-left-right p-2""></i>Contact-us</a></li>
+                    <li><a class="dropdown-item" href="enquiry.html"><i class="fa-solid fa-magnifying-glass p-2""></i>Enquiry</a></li>
+                    <li><a class="dropdown-item" href="feedback.html"><i class="fa-solid fa-comments p-2""></i>Feedback</a></li>
+              
+                  </ul>
+                </li>
+                
+              </ul>
+              
+            </div>
+          </div>
+        </nav>   
+       
+  
+
+    <form>
+      <div class="from-to">
+        <h1 class="text-dark">
+          <center>
+            <i class="fa-solid fa-plane-departure p-2"></i>FLIGHT BOOKING
+          </center>
+        </h1>
+        <section>
+          <label for="departure">Departure</label>
+          <select name="from" id="departure" required>
+            <option value="1">Agartala Singerbhil Airport (IXA)</option>
+            <option value="1">Agatti Island Agatti Island Airport (AGX)</option>
+            <option value="1">Agra Kheria Airport (AGR)</option>
+            <option value="1">Ahmedabad Ahmedabad Airport (AMD)</option>
+            <option value="1">Aizawl Aizawl Airport (AJL)</option>
+            <option value="1">Akola Akola Airport (AKD)</option>
+            <option value="1">Allahabad Bamrauli Airport (IXD)</option>
+            <option value="1">Along Along Airport (IXV)</option>
+            <option value="1">Amritsar Raja Sansi Airport (ATQ)</option>
+            <option value="1">Aurangabad Chikkalthana Airport (IXU)</option>
+            <option value="1">Bagdogra Bagdogra Airport (IXB)</option>
+            <option value="1">Balurghat Balurghat Airport (RGH)</option>
+            <option value="1">Bangalore Hindustan Airport (BLR)</option>
+            <option value="1">Bareli Bareli Airport (BEK)</option>
+            <option value="1">Belgaum Sambre Airport (IXG)</option>
+            <option value="1">Bellary Bellary Airport (BEP)</option>
+            <option value="1">Bhatinda Bhatinda Airport (BUP)</option>
+            <option value="1">Bhavnagar Bhavnagar Airport (BHU)</option>
+            <option value="1">Bhopal Bhopal Airport (BHO)</option>
+            <option value="1">Bhubaneswar Bhubaneswar Airport (BBI)</option>
+            <option value="1">Bhuj Rudra Mata Airport (BHJ)</option>
+            <option value="1">Bikaner Bikaner Airport (BKB)</option>
+            <option value="1">Bilaspur Bilaspur Airport (PAB)</option>
+            <option value="1">
+              Bombay (Mumbai) Chhatrapati Shivaji Airport (BOM)
+            </option>
+            <option value="1">
+              Calcutta (Kolkata) Netaji Subhas Chandra Airport (CCU)
+            </option>
+            <option value="1">Car Nicobar Car Nicobar Airport (CBD)</option>
+            <option value="1">Chandigarh Chandigarh Airport (IXC)</option>
+            <option value="1">Coimbatore Peelamedu Airport (CJB)</option>
+            <option value="1">Cooch Behar Cooch Behar Airport (COH)</option>
+            <option value="1">Cuddapah Cuddapah Airport (CDP)</option>
+            <option value="1">Daman Daman Airport (NMB)</option>
+            <option value="1">Daparizo Daparizo Airport (DAE)</option>
+            <option value="1">Darjeeling Darjeeling Airport (DAI)</option>
+            <option value="1">Dehra Dun Dehra Dun Airport (DED)</option>
+            <option value="1">
+              Delhi Indira Gandhi International Airport (DEL)
+            </option>
+            <option value="1">Deparizo Deparizo Airport (DEP)</option>
+            <option value="1">Dhanbad Dhanbad Airport (DBD)</option>
+            <option value="1">Dharamsala Gaggal Airport (DHM)</option>
+            <option value="1">Dibrugarh Chabua Airport (DIB)</option>
+            <option value="1">Dimapur Dimapur Airport (DMU)</option>
+            <option value="1">Diu Diu Airport (DIU)</option>
+            <option value="1">Gaya Gaya Airport (GAY)</option>
+            <option value="1">Goa Dabolim Airport (GOI)</option>
+            <option value="1">Gorakhpur Gorakhpur Airport (GOP)</option>
+            <option value="1">Guna Guna Airport (GUX)</option>
+            <option value="1">Guwahati Borjhar Airport (GAU)</option>
+            <option value="1">Gwalior Gwalior Airport (GWL)</option>
+            <option value="1">Hissar Hissar Airport (HSS)</option>
+            <option value="1">Hubli Hubli Airport (HBX)</option>
+            <option value="1">Hyderabad Begumpet Airport (HYD)</option>
+            <option value="1">Imphal Municipal Airport (IMF)</option>
+            <option value="1">Indore Indore Airport (IDR)</option>
+            <option value="1">Jabalpur Jabalpur Airport (JLR)</option>
+            <option value="1">Jagdalpur Jagdalpur Airport (JGB)</option>
+            <option value="1">Jaipur Sanganeer Airport (JAI)</option>
+            <option value="1">Jaisalmer Jaisalmer Airport (JSA)</option>
+            <option value="1">Jammu Satwari Airport (IXJ)</option>
+            <option value="1">Jamnagar Govardhanpur Airport (JGA)</option>
+            <option value="1">Jamshedpur Sonari Airport (IXW)</option>
+            <option value="1">Jeypore Jeypore Airport (PYB)</option>
+            <option value="1">Jodhpur Jodhpur Airport (JDH)</option>
+            <option value="1">Jorhat Rowriah Airport (JRH)</option>
+            <option value="1">Kailashahar Kailashahar Airport (IXH)</option>
+            <option value="1">Kamalpur Kamalpur Airport (IXQ)</option>
+            <option value="1">Kandla Kandla Airport (IXY)</option>
+            <option value="1">Kanpur Kanpur Airport (KNU)</option>
+            <option value="1">Keshod Keshod Airport (IXK)</option>
+            <option value="1">Khajuraho Khajuraho Airport (HJR)</option>
+            <option value="1">Khowai Khowai Airport (IXN)</option>
+            <option value="1">Kochi Kochi Airport (COK)</option>
+            <option value="1">Kolhapur Kolhapur Airport (KLH)</option>
+            <option value="1">Kota Kota Airport (KTU)</option>
+            <option value="1">
+              Kozhikode Calicut International Airport (CCJ)
+            </option>
+            <option value="1">Kulu Bhuntar Airport (KUU)</option>
+            <option value="1">Leh Leh Airport (IXL)</option>
+            <option value="1">Lilabari Lilabari Airport (IXI)</option>
+            <option value="1">Lucknow Amausi Airport (LKO)</option>
+            <option value="1">Ludhiana Ludhiana Airport (LUH)</option>
+            <option value="1">Madras (Chennai) Chennai Airport (MAA)</option>
+            <option value="1">Madurai Madurai Airport (IXM)</option>
+            <option value="1">Malda Malda Airport (LDA)</option>
+            <option value="1">Mangalore Bajpe Airport (IXE)</option>
+            <option value="1">Mohanbari Mohanbari Airport (MOH)</option>
+            <option value="1">Muzaffarnagar Muzaffarnagar Airport (MZA)</option>
+            <option value="1">Muzaffarpur Muzaffarpur Airport (MZU)</option>
+            <option value="1">Mysore Mysore Airport (MYQ)</option>
+            <option value="1">Nagpur Sonegaon Airport (NAG)</option>
+            <option value="1">Nanded Nanded Airport (NDC)</option>
+            <option value="1">Nasik Gandhinagar Airport (ISK)</option>
+            <option value="1">Neyveli Neyveli Airport (NVY)</option>
+            <option value="1">Osmanabad Osmanabad Airport (OMN)</option>
+            <option value="1">Pantnagar Pantnagar Airport (PGH)</option>
+            <option value="1">Pasighat Pasighat Airport (IXT)</option>
+            <option value="1">Pathankot Pathankot Airport (IXP)</option>
+            <option value="1">Patna Patna Airport (PAT)</option>
+            <option value="1">Pondicherry Pondicherry Airport (PNY)</option>
+            <option value="1">Porbandar Porbandar Airport (PBD)</option>
+            <option value="1">Port Blair Port Blair Airport (IXZ)</option>
+            <option value="1">Pune Lohegaon Airport (PNQ)</option>
+            <option value="1">Puttaparthi Puttaprathe Airport (PUT)</option>
+            <option value="1">Raipur Raipur Airport (RPR)</option>
+            <option value="1">Rajahmundry Rajahmundry Airport (RJA)</option>
+            <option value="1">Rajkot Civil Airport (RAJ)</option>
+            <option value="1">Rajouri Rajouri Airport (RJI)</option>
+            <option value="1">Ramagundam Ramagundam Airport (RMD)</option>
+            <option value="1">Ranchi Ranchi Airport (IXR)</option>
+            <option value="1">Ratnagiri Ratnagiri Airport (RTC)</option>
+            <option value="1">Rewa Rewa Airport (REW)</option>
+            <option value="1">Rourkela Rourkela Airport (RRK)</option>
+            <option value="1">Rupsi Rupsi Airport (RUP)</option>
+            <option value="1">Salem Salem Airport (SXV)</option>
+            <option value="1">Satna Satna Airport (TNI)</option>
+            <option value="1">Shillong Shillong Airport (SHL)</option>
+            <option value="1">Sholapur Sholapur Airport (SSE)</option>
+            <option value="1">Silchar Kumbhirgram Airport (IXS)</option>
+            <option value="1">Simla Simla Airport (SLV)</option>
+            <option value="1">Srinagar Srinagar Airport (SXR)</option>
+            <option value="1">Surat Surat Airport (STV)</option>
+            <option value="1">Tezpur Salonibari Airport (TEZ)</option>
+            <option value="1">Tezu Tezu Airport (TEI)</option>
+            <option value="1">Thanjavur Thanjavur Airport (TJV)</option>
+            <option value="1">
+              Thiruvananthapuram Thiruvananthapuram International Airport (TRV)
+            </option>
+            <option value="1">Tiruchirapally Civil Airport (TRZ)</option>
+            <option value="1">Tirupati Tirupati Airport (TIR)</option>
+            <option value="1">Tuticorin Tuticorin Airport (TCR)</option>
+            <option value="1">Udaipur Dabok Airport (UDR)</option>
+            <option value="1">Vadodara Vadodara Airport (BDQ)</option>
+            <option value="1">Varanasi Varanasi Airport (VNS)</option>
+            <option value="1">Vijayawada Vijayawada Airport (VGA)</option>
+            <option value="1">Visakhapatnam Visakhapatnam Airport (VTZ)</option>
+            <option value="1">Warangal Warangal Airport (WGC)</option>
+          </select>
+        </section>
+
+        <section>
+          <label for="destination">Destination</label>
+          <select name="to" id="destination" required>
+            <option value="1">Agartala Singerbhil Airport (IXA)</option>
+            <option value="1">Agatti Island Agatti Island Airport (AGX)</option>
+            <option value="1">Agra Kheria Airport (AGR)</option>
+            <option value="1">Ahmedabad Ahmedabad Airport (AMD)</option>
+            <option value="1">Aizawl Aizawl Airport (AJL)</option>
+            <option value="1">Akola Akola Airport (AKD)</option>
+            <option value="1">Allahabad Bamrauli Airport (IXD)</option>
+            <option value="1">Along Along Airport (IXV)</option>
+            <option value="1">Amritsar Raja Sansi Airport (ATQ)</option>
+            <option value="1">Aurangabad Chikkalthana Airport (IXU)</option>
+            <option value="1">Bagdogra Bagdogra Airport (IXB)</option>
+            <option value="1">Balurghat Balurghat Airport (RGH)</option>
+            <option value="1">Bangalore Hindustan Airport (BLR)</option>
+            <option value="1">Bareli Bareli Airport (BEK)</option>
+            <option value="1">Belgaum Sambre Airport (IXG)</option>
+            <option value="1">Bellary Bellary Airport (BEP)</option>
+            <option value="1">Bhatinda Bhatinda Airport (BUP)</option>
+            <option value="1">Bhavnagar Bhavnagar Airport (BHU)</option>
+            <option value="1">Bhopal Bhopal Airport (BHO)</option>
+            <option value="1">Bhubaneswar Bhubaneswar Airport (BBI)</option>
+            <option value="1">Bhuj Rudra Mata Airport (BHJ)</option>
+            <option value="1">Bikaner Bikaner Airport (BKB)</option>
+            <option value="1">Bilaspur Bilaspur Airport (PAB)</option>
+            <option value="1">
+              Bombay (Mumbai) Chhatrapati Shivaji Airport (BOM)
+            </option>
+            <option value="1">
+              Calcutta (Kolkata) Netaji Subhas Chandra Airport (CCU)
+            </option>
+            <option value="1">Car Nicobar Car Nicobar Airport (CBD)</option>
+            <option value="1">Chandigarh Chandigarh Airport (IXC)</option>
+            <option value="1">Coimbatore Peelamedu Airport (CJB)</option>
+            <option value="1">Cooch Behar Cooch Behar Airport (COH)</option>
+            <option value="1">Cuddapah Cuddapah Airport (CDP)</option>
+            <option value="1">Daman Daman Airport (NMB)</option>
+            <option value="1">Daparizo Daparizo Airport (DAE)</option>
+            <option value="1">Darjeeling Darjeeling Airport (DAI)</option>
+            <option value="1">Dehra Dun Dehra Dun Airport (DED)</option>
+            <option value="1">
+              Delhi Indira Gandhi International Airport (DEL)
+            </option>
+            <option value="1">Deparizo Deparizo Airport (DEP)</option>
+            <option value="1">Dhanbad Dhanbad Airport (DBD)</option>
+            <option value="1">Dharamsala Gaggal Airport (DHM)</option>
+            <option value="1">Dibrugarh Chabua Airport (DIB)</option>
+            <option value="1">Dimapur Dimapur Airport (DMU)</option>
+            <option value="1">Diu Diu Airport (DIU)</option>
+            <option value="1">Gaya Gaya Airport (GAY)</option>
+            <option value="1">Goa Dabolim Airport (GOI)</option>
+            <option value="1">Gorakhpur Gorakhpur Airport (GOP)</option>
+            <option value="1">Guna Guna Airport (GUX)</option>
+            <option value="1">Guwahati Borjhar Airport (GAU)</option>
+            <option value="1">Gwalior Gwalior Airport (GWL)</option>
+            <option value="1">Hissar Hissar Airport (HSS)</option>
+            <option value="1">Hubli Hubli Airport (HBX)</option>
+            <option value="1">Hyderabad Begumpet Airport (HYD)</option>
+            <option value="1">Imphal Municipal Airport (IMF)</option>
+            <option value="1">Indore Indore Airport (IDR)</option>
+            <option value="1">Jabalpur Jabalpur Airport (JLR)</option>
+            <option value="1">Jagdalpur Jagdalpur Airport (JGB)</option>
+            <option value="1">Jaipur Sanganeer Airport (JAI)</option>
+            <option value="1">Jaisalmer Jaisalmer Airport (JSA)</option>
+            <option value="1">Jammu Satwari Airport (IXJ)</option>
+            <option value="1">Jamnagar Govardhanpur Airport (JGA)</option>
+            <option value="1">Jamshedpur Sonari Airport (IXW)</option>
+            <option value="1">Jeypore Jeypore Airport (PYB)</option>
+            <option value="1">Jodhpur Jodhpur Airport (JDH)</option>
+            <option value="1">Jorhat Rowriah Airport (JRH)</option>
+            <option value="1">Kailashahar Kailashahar Airport (IXH)</option>
+            <option value="1">Kamalpur Kamalpur Airport (IXQ)</option>
+            <option value="1">Kandla Kandla Airport (IXY)</option>
+            <option value="1">Kanpur Kanpur Airport (KNU)</option>
+            <option value="1">Keshod Keshod Airport (IXK)</option>
+            <option value="1">Khajuraho Khajuraho Airport (HJR)</option>
+            <option value="1">Khowai Khowai Airport (IXN)</option>
+            <option value="1">Kochi Kochi Airport (COK)</option>
+            <option value="1">Kolhapur Kolhapur Airport (KLH)</option>
+            <option value="1">Kota Kota Airport (KTU)</option>
+            <option value="1">
+              Kozhikode Calicut International Airport (CCJ)
+            </option>
+            <option value="1">Kulu Bhuntar Airport (KUU)</option>
+            <option value="1">Leh Leh Airport (IXL)</option>
+            <option value="1">Lilabari Lilabari Airport (IXI)</option>
+            <option value="1">Lucknow Amausi Airport (LKO)</option>
+            <option value="1">Ludhiana Ludhiana Airport (LUH)</option>
+            <option value="1">Madras (Chennai) Chennai Airport (MAA)</option>
+            <option value="1">Madurai Madurai Airport (IXM)</option>
+            <option value="1">Malda Malda Airport (LDA)</option>
+            <option value="1">Mangalore Bajpe Airport (IXE)</option>
+            <option value="1">Mohanbari Mohanbari Airport (MOH)</option>
+            <option value="1">Muzaffarnagar Muzaffarnagar Airport (MZA)</option>
+            <option value="1">Muzaffarpur Muzaffarpur Airport (MZU)</option>
+            <option value="1">Mysore Mysore Airport (MYQ)</option>
+            <option value="1">Nagpur Sonegaon Airport (NAG)</option>
+            <option value="1">Nanded Nanded Airport (NDC)</option>
+            <option value="1">Nasik Gandhinagar Airport (ISK)</option>
+            <option value="1">Neyveli Neyveli Airport (NVY)</option>
+            <option value="1">Osmanabad Osmanabad Airport (OMN)</option>
+            <option value="1">Pantnagar Pantnagar Airport (PGH)</option>
+            <option value="1">Pasighat Pasighat Airport (IXT)</option>
+            <option value="1">Pathankot Pathankot Airport (IXP)</option>
+            <option value="1">Patna Patna Airport (PAT)</option>
+            <option value="1">Pondicherry Pondicherry Airport (PNY)</option>
+            <option value="1">Porbandar Porbandar Airport (PBD)</option>
+            <option value="1">Port Blair Port Blair Airport (IXZ)</option>
+            <option value="1">Pune Lohegaon Airport (PNQ)</option>
+            <option value="1">Puttaparthi Puttaprathe Airport (PUT)</option>
+            <option value="1">Raipur Raipur Airport (RPR)</option>
+            <option value="1">Rajahmundry Rajahmundry Airport (RJA)</option>
+            <option value="1">Rajkot Civil Airport (RAJ)</option>
+            <option value="1">Rajouri Rajouri Airport (RJI)</option>
+            <option value="1">Ramagundam Ramagundam Airport (RMD)</option>
+            <option value="1">Ranchi Ranchi Airport (IXR)</option>
+            <option value="1">Ratnagiri Ratnagiri Airport (RTC)</option>
+            <option value="1">Rewa Rewa Airport (REW)</option>
+            <option value="1">Rourkela Rourkela Airport (RRK)</option>
+            <option value="1">Rupsi Rupsi Airport (RUP)</option>
+            <option value="1">Salem Salem Airport (SXV)</option>
+            <option value="1">Satna Satna Airport (TNI)</option>
+            <option value="1">Shillong Shillong Airport (SHL)</option>
+            <option value="1">Sholapur Sholapur Airport (SSE)</option>
+            <option value="1">Silchar Kumbhirgram Airport (IXS)</option>
+            <option value="1">Simla Simla Airport (SLV)</option>
+            <option value="1">Srinagar Srinagar Airport (SXR)</option>
+            <option value="1">Surat Surat Airport (STV)</option>
+            <option value="1">Tezpur Salonibari Airport (TEZ)</option>
+            <option value="1">Tezu Tezu Airport (TEI)</option>
+            <option value="1">Thanjavur Thanjavur Airport (TJV)</option>
+            <option value="1">
+              Thiruvananthapuram Thiruvananthapuram International Airport (TRV)
+            </option>
+            <option value="1">Tiruchirapally Civil Airport (TRZ)</option>
+            <option value="1">Tirupati Tirupati Airport (TIR)</option>
+            <option value="1">Tuticorin Tuticorin Airport (TCR)</option>
+            <option value="1">Udaipur Dabok Airport (UDR)</option>
+            <option value="1">Vadodara Vadodara Airport (BDQ)</option>
+            <option value="1">Varanasi Varanasi Airport (VNS)</option>
+            <option value="1">Vijayawada Vijayawada Airport (VGA)</option>
+            <option value="1">Visakhapatnam Visakhapatnam Airport (VTZ)</option>
+            <option value="1">Warangal Warangal Airport (WGC)</option>
+          </select>
+        </section>
+      </div>
+
+      <div class="date" id="time">
+        <label for="time">Date of departure</label>
+        <input type="date" required />
+      </div>
+
+      <div class="passengers">
+        <section>
+          <label for="adults">Adults</label>
+          <input
+            type="number"
+            id="adults"
+            name="Adults"
+            min="1"
+            max="10"
+            value="1"
+            required
+          />
+        </section>
+        <section>
+          <label for="children">Children</label>
+          <input
+            type="number"
+            id="children"
+            name="children"
+            min="0"
+            max="10"
+            value="0"
+          />
+        </section>
+      </div>
+
+      <div class="info">
+        <section>
+          <label for="mail">e-mail Address</label>
+          <input type="email" name="email" id="mail" required />
+        </section>
+        <section>
+          <label for="phone">Telephone number</label>
+          <input type="tel" name="Phone" id="phone" minlength="10" required />
+        </section>
+      </div>
+
+      <div class="identity">
+        <section>
+          <label for="identity">National Id</label>
+          <input type="text" id="identity" name="National Id" required />
+        </section>
+        <section>
+          <label for="rad">Piece of identity</label>
+          <section>
+            <span>
+              <input
+                type="radio"
+                name="adhaar"
+                value="adhaaar"
+                id="adhaar"
+                checked
+              />
+              <label for="adhaar">Adhaar card</label>
+            </span>
+
+            <span>
+              <input type="radio" name="peice" value="Passport" id="pass" />
+              <label for="pass">Passport</label>
+            </span>
+
+            <span>
+              <input
+                type="radio"
+                name="peice"
+                value="drive licence"
+                id="drive"
+              />
+              <label for="drive">Drive licence</label>
+            </span>
+          </section>
+        </section>
+      </div>
+
+      <input type="submit" formaction="payment.html" />
+    </form>
+    <!--FOOTER-->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+   <div class="footer-basic">
+    <style>
+      .footer-basic {
+  padding: 10px 0 ;
+  background-color: white;
+  color:black;
+  margin: 0 0 0 0;
+}
+      </style>
+       <footer>
+           <div class="social"><a href="https://www.instagram.com/accounts/signup"><i class="icon ion-social-instagram"></i></a><a href="https://www.snapchat.com/add/login"><i class="icon ion-social-snapchat"></i></a><a href="https://twitter.com/login"><i class="icon ion-social-twitter"></i></a><a href="https://www.facebook.com/login.php"><i class="icon ion-social-facebook"></i></a></div>
+           <ul class="list-inline">
+               <li class="list-inline-item"><a href="#">Home</a></li>
+               <li class="list-inline-item"><a href="#">Services</a></li>
+               <li class="list-inline-item"><a href="#">About</a></li>
+               <li class="list-inline-item"><a href="terms.html">Terms</a></li>
+               <li class="list-inline-item"><a href="privacy.html">Privacy Policy</a></li>
+               <li class="list-inline-item"><a href="ax.html">FAQ</a></li>
+           </ul>
+           <p class="copyright">thecampingmonk © 2022</p>
+       </footer>
+   </div>	    
+<!-- Back to top button -->
+<button type="button" class="btn btn-danger btn-floating btn-lg" id="btn-back-to-top">
+  <i class="fas fa-arrow-up"></i>
+</button>
+
+
+
+
+
+<!-- Explanation -->
+
+
+   <script>
+   //Get the button
+let mybutton = document.getElementById("btn-back-to-top");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function () {
+scrollFunction();
+};
+
+function scrollFunction() {
+if (
+document.body.scrollTop > 20 ||
+document.documentElement.scrollTop > 20
+) {
+mybutton.style.display = "block";
+} else {
+mybutton.style.display = "none";
+}
+}
+// When the user clicks on the button, scroll to the top of the document
+mybutton.addEventListener("click", backToTop);
+
+function backToTop() {
+document.body.scrollTop = 0;
+document.documentElement.scrollTop = 0;
+}
+</script> 
+    
+  </body>
+</html>

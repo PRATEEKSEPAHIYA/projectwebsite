@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/32702421dd.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Bootstrap Example</title>
+  </head>
+  <body>
+  <!--navbar-->
+	   
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+		<style>
+		.navbar-collapse {
+			flex-basis: 0;
+			flex-grow: 0;
+			// For always expanded or extra full navbars, ensure content aligns itself
+			// properly vertically. Can be easily overridden with flex utilities.
+		  }
+		  .navbar>.container, .navbar>.container-fluid, .navbar>.container-lg, .navbar>.container-md, .navbar>.container-sm, .navbar>.container-xl, .navbar>.container-xxl {
+    display: flex;
+    flex-wrap: inherit;
+    align-items: center;
+    justify-content: space-evenly;
+}
+		</style>
+        <div class="container-fluid" >
+			<img class="img size=100px bg-transparent" src="/images/tmc logo.png"  alt="">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+	            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="//127.0.0.1:5500/index.html#"><i class="fa-solid fa-house-chimney"></i>Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="RESERVATION.html"><i class="fa-solid fa-mountain-sun"></i>Camping Reservation</a>
+              </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="fa-solid fa-arrow-down-short-wide"></i>Online bookings
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="bus.html"><i class="fa-solid fa-bus p-2" ></i>Bus Booking</i></a></li>
+            <li><a class="dropdown-item" href="train.html"><i class="fa-solid fa-train-subway p-2"></i>Train Booking</a></li>
+            <li><a class="dropdown-item" href="flight.html"><i class="fa-solid fa-plane-departure p-2"></i>Flights Booking</a></li>
+            <li><a class="dropdown-item" href="hotels.html"><i class="fa-solid fa-hotel p-2"></i>Hotels Booking</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="fa-solid fa-globe"></i>Tour and packages
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <li><a class="dropdown-item" href="leh itenary.html"><i class="fa-solid fa-suitcase"></i>Leh-ladakh package</i></a></li>
+          <li><a class="dropdown-item" href="manali package.html"><i class="fa-solid fa-suitcase"></i>Manali package</a></li>
+          <li><a class="dropdown-item" href="spiti kaza.html"><i class="fa-solid fa-suitcase"></i>Spiti-Kaza packages</a></li>
+          <li><a class="dropdown-item" href="dharamshala .html"><i class="fa-solid fa-suitcase"></i>Dharamshala package</a></li>
+          <li><a class="dropdown-item" href="killar.html"><i class="fa-solid fa-suitcase"></i>Killar-kishtawar packages </i></a></li>
+          <li><a class="dropdown-item" href="tirthan.html"><i class="fa-solid fa-suitcase"></i>Tirthan package</a></li>
+          <li><a class="dropdown-item" href="chitkul .html"><i class="fa-solid fa-suitcase"></i>Kinnaur-Chitkul packages</a></li>
+          <li><a class="dropdown-item" href="shimla .html"><i class="fa-solid fa-suitcase"></i>Shimla-kasauli packages</a></li>
+          <li><a class="dropdown-item" href="dalhousie.html"><i class="fa-solid fa-suitcase"></i>Dalhousie-chamba packages</a></li>
+          <li><a class="dropdown-item" href="mandi.html"><i class="fa-solid fa-suitcase"></i>Barot-Mandi packages</a></li>
+        </ul>
+      </li>
+      
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <i class="fa-solid fa-bars"></i>More-Options
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="contact.html"><i class="fa-solid fa-people-arrows-left-right p-2""></i>Contact-us</a></li>
+                  <li><a class="dropdown-item" href="enquiry.html"><i class="fa-solid fa-magnifying-glass p-2""></i>Enquiry</a></li>
+                  <li><a class="dropdown-item" href="feedback.html"><i class="fa-solid fa-comments p-2""></i>Feedback</a></li>
+            
+                </ul>
+              </li>
+              
+            </ul>
+            
+          </div>
+        </div>
+      </nav>   
+	    
+
+    
+    <div id="parallax-world-of-ugg">
+      <section>
+        <div class="title m-5 p-3 text-center text-uppercase">
+          <h3>Let's do some</h3>
+          <h1>CAMPING IN HIMACHAL PRADESH</h1>
+        </div>
+      </section>
+
+      <section>
+        <div class="parallax-nineteen  text-center text-light text-uppercase"">
+            <h2>Bir-Biling</h2>
+        </div>
+      </section>
+
+      <section>
+        <div class="block">
+          <div class="card m-5">
+            <div class="row p-5 align-items-center">
+              <div class="col-md-4">
+                <img
+                  src="images\ep1.jpg"
+                  class="img-fluid rounded-start"
+                  alt="..."
+                />
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <p class="card-text">
+                    <span class="first-character RT">T</span>he Camping is an outdoor activity involving overnight stays away from home,either without shelter or using basic shelter such as a tent.
+                    To see the majestic views in front of your eyes.
+                    The best time to do Bir Billing camping is during the months of April to June.
+                    Post the summers, monsoons receive light to heavy rainfall.
+                    There also might be a risk of landslides.
+                    On the other hand, winters undergo extremely harsh temperature that falls to sub-zero levels.
+                    October and November serve as the ideal months for performing adventure activities related to flying, and same goes with March to May. 
+                    Bir Billing is situated at an altitude of 5000 feet, an altitude which almost touches the clouds.
+                    Hence, march to May and late September to November serve as the ideal two seasons for camping in the beautiful place.
+                    Bir Billing is thus the ideal camping spot to rejuvenate your senses and bring yourself close to nature. 
+                    Indulge yourself in guilt free adventure sports while experiencing a time of a lifetime.
+                    Bir is undoubtedly the best spot for practising paragliding which sets its popularity aside.
+                    Enjoy Bir Billing camping in a calm and serene environment in the best camping spots, available in a variation of prices. 
+                    Based on the amenities, travellers can select the camp places as per their budget and preference to enjoy a lifetime experience.
+                    So, wait no more and plan a trip to Himachal pradesh
+                    The camp area offers pleasant weather all around the year with breathtaking views.<br/>
+                    Charming green mountains offer endless fun. Situated at an altitude of 8000 feet, the high quality tents offer comfortable and convenient stay.
+                    With good food, music and bonfire, visitors are sure to experience an experience of a lifetime
+                    Travellers can also indulge in fishing with the presence of fishing farms in the near by areas.
+                  </p>
+
+                  <p class="card-text">
+                    <small class="text-muted">Last updated 3 mins ago</small>
+                  </p>
+                </div>
+              </div>
+            </div>
+        
+      </section>
+
+      <section>
+        <div class="parallax-twenty  text-center text-light text-uppercase"">
+          <h2>Beas Kund</h2>
+        </div>
+      </section>
+
+      <section>
+        <div class="block">
+          <div class="card m-5">
+            <div class="row p-5 align-items-center">
+              <div class="col-md-4">
+                <img
+                  src="images\ep2.jpg"
+                  class="img-fluid rounded-start"
+                  alt="..."
+                />
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <p class="card-text">
+                    <span class="first-character RT">T</span>he Beas Kund is a high altitude alpine lake in the Himalayas from which the river Beas originates. Treks to Beas Kund from Manali is very popular. Whether you are a pro or a beginner, this moderate trek of 1-2 days is for everyone. As you proceed from Manali along Beas, you will witness nature’s beauty in the perfect combination of the lush green slopes, colorful wildflowers, and the fresh mountain air. This trek rewards you with spectacular views of the lofty peaks of Pir Panjal Range and the emerald green meadows in Dhundi and Bakarthach. Situated in a pocket at the side of a mountain, Beas Kund remains concealed from your sight until you reach your destination. Once there, behold the magnificent view of the royal blue waters of the Kund. Dip your feet in the water and get rid of all your tiredness. This mountain pool connects to the Hindus from the legendary days. According to the epics, Sage Vyas, the author of Mahabharata, used to take his daily bath in this pristine blue lake.
+                  </p>
+
+                  <p class="card-text">
+                    <small class="text-muted">Last updated 3 mins ago</small>
+                  </p>
+                </div>
+              </div>
+            </div>
+        
+      </section>
+      
+      <section>
+        <div class="parallax-twentyone  text-center text-light text-uppercase"">
+          <h2>Triund</h2>
+        </div>
+      </section>
+
+      <section>
+        <div class="block">
+          <div class="card m-5">
+            <div class="row p-5 align-items-center">
+              <div class="col-md-4">
+                <img
+                  src="images\ep3.jpg"
+                  class="img-fluid rounded-start"
+                  alt="..."
+                />
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <p class="card-text">
+                    <span class="first-character RT">T</span>he It is a small hill station in Himachal Pradesh which is in the foot Dhauladhar ranges.<br/>
+                    Triund has a vast land of green grass and one of the accessible campsites among campers and trekkers and the evening sky from Triund is an excellent view to pitch a tent for camping. 
+                    The rejuvenating atmosphere of the camp is its specialty which makes people from all over the world come for trekking and camping in Himachal.
+                 Highlights: It’s offers fascinating views of nature with lots of waterfall and a gorgeous evening sky which makes it a picturesque place for the campers and trekkers with easily availability of tents and camps at a moderate cost.
+                  </p>
+
+                  <p class="card-text">
+                    <small class="text-muted">Last updated 3 mins ago</small>
+                  </p>
+                </div>
+              </div>
+            </div>
+        
+      </section>
+      <section>
+        <div class="parallax-twentytwo  text-center text-light text-uppercase"">
+          <h2>Chalal</h2>
+        </div>
+      </section>
+
+      <section>
+        <div class="block">
+          <div class="card m-5">
+            <div class="row p-5 align-items-center">
+              <div class="col-md-4">
+                <img
+                  src="images\ep4.jpg"
+                  class="img-fluid rounded-start"
+                  alt="..."
+                />
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <p class="card-text">
+                    <span class="first-character RT">T</span>he It is a small trekking and camping site near Kasol which is connected by a narrow cable bridge to Kasol. 
+                    It is a destination which is mostly preferred by nature-lovers.
+                     The place features tall pines and happening cafes which makes camping in Himachal sound perfect.
+                    
+                    Highlights: 30 Km ride from Kullu Manali Airport and significant of campsites are near the river, which makes for a beautiful campsite.
+                    
+                
+                    
+                    Stay Options: Camps, guest houses, and tents
+
+                  <p class="card-text">
+                    <small class="text-muted">Last updated 3 mins ago</small>
+                  </p>
+                </div>
+              </div>
+            </div>
+        
+      </section>
+      <section>
+        <div class="parallax-twentythree  text-center text-light text-uppercase"">
+          <h2> Rasol</h2>
+        </div>
+      </section>
+
+      <section>
+        <div class="block">
+          <div class="card m-5">
+            <div class="row p-5 align-items-center">
+              <div class="col-md-4">
+                <img
+                  src="images\ep5.jpg"
+                  class="img-fluid rounded-start"
+                  alt="..."
+                />
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <p class="card-text">
+                    <span class="first-character RT">I</span>f you want to escape the crowd in Kasol, this place is the best fit for you.
+                    Situated in a charming village in the Parvati valley.
+                     The place offers rigorous treks, steep mountains, and Temple of Jamdagni Rishi is also located here. 
+                     The greenery around and the calmness will soothe your senses completely.
+                  It’s an affordable place to camp with beautiful weather, greenery and peace. You can easily find campsites with beautiful views here.
+                  
+                  </p>
+
+                  <p class="card-text">
+                    <small class="text-muted">Last updated 3 mins ago</small>
+                  </p>
+                </div>
+              </div>
+            </div>
+        
+      </section>
+      <section>
+        <div class="parallax-twentyfour  text-center text-light text-uppercase"">
+          <h2>Malana</h2>
+        </div>
+      </section>
+
+      <section>
+        <div class="block">
+          <div class="card m-5">
+            <div class="row p-5 align-items-center">
+              <div class="col-md-4">
+                <img
+                  src="images\ep6.jpg"
+                  class="img-fluid rounded-start"
+                  alt="..."
+                />
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <p class="card-text">
+                    <span class="first-character RT">T</span>he Malana village is located in the mountaintop of the Himalayas’ making the uphill trek difficult through the difficult terrains. 
+                    Only a few kilometers away from Kasol, this campsite is famous among many trekkers and campers and this is one of the best places for riverside camping in Himachal.
+                    
+                    Highlights: Many places have free WI-Fi and stunning scenery, and the availability of camping equipment makes it a famous camping spot all around the globe.
+                  </p>
+
+                  <p class="card-text">
+                    <small class="text-muted">Last updated 3 mins ago</small>
+                  </p>
+                </div>
+              </div>
+            </div>
+        
+      </section>
+
+      <section>
+        <div class="parallax-twentynine  text-center text-light text-uppercase"">
+          <h2>Buddhaban</h2>
+        </div>
+      </section>
+
+      <section>
+        <div class="block">
+          <div class="card m-5">
+            <div class="row p-5 align-items-center">
+              <div class="col-md-4">
+                <img
+                  src="images\ep7.jpg"
+                  class="img-fluid rounded-start"
+                  alt="..."
+                />
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <p class="card-text">
+                    <span class="first-character RT">A</span>fter Tosh, this is the place where most of the trekkers camp as it offers beautiful scenery and excellent activities for travelers to spend their leisure time.
+                    It is just a short trek from Tosh Village near Kasol.<br/>
+                    Government buses and private taxis are running round the clock for all those who do not wish to go walking to the campsites.
+                 
+                 Highlights: Tosh River flow near the campsites and the presence of apple orchard in the village, puts the cherry on the cake, making it the highlight of this short trek from Tosh Village
+
+                  <p class="card-text">
+                    <small class="text-muted">Last updated 3 mins ago</small>
+                  </p>
+                </div>
+              </div>
+            </div>
+        
+      </section>
+
+      <section>
+        <div class="parallax-twentyfive  text-center text-light text-uppercase"">
+          <h2>Grahan</h2>
+        </div>
+      </section>
+
+      <section>
+        <div class="block">
+          <div class="card m-5">
+            <div class="row p-5 align-items-center">
+              <div class="col-md-4">
+                <img
+                  src="images\ep8.jpg"
+                  class="img-fluid rounded-start"
+                  alt="..."
+                />
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <p class="card-text">
+                    <span class="first-character RT">I</span>t is one of the most visited places for trekkers from New Delhi and Chandigarh. 
+                    10 km far from Kasol, it is a place where people visit to experience nature’s tranquillity.
+                     Located in Parvati Valley, Grahan has a scenic campsite and welcoming locals.
+                      The trek is a walk across the forest and consumption of alcohol makes it one of the best sites for camping in Himachal with families.
+                  
+                  Wooden guest houses and locally run homestays in the village and camping grounds make it a unique place to camp.
+                  
+                  <p class="card-text">
+                    <small class="text-muted">Last updated 3 mins ago</small>
+                  </p>
+                </div>
+              </div>
+            </div>
+        
+      </section>
+
+      <section>
+        <div class="parallax-twentysix  text-center text-light text-uppercase"">
+          <h2> Kutla Glacier</h2>
+        </div>
+      </section>
+
+      <section>
+        <div class="block">
+          <div class="card m-5">
+            <div class="row p-5 align-items-center">
+              <div class="col-md-4">
+                <img
+                  src="images\ep9.jpg"
+                  class="img-fluid rounded-start"
+                  alt="..."
+                />
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <p class="card-text">
+                    <span class="first-character RT">I</span>t is surruounded by breathtaking greenery and at a comfortable walking distance of 8 km from Tosh, Kutla Glacier, gives an excellent sights of the mountains, a beautiful village and some forest stretches along the trek.
+                  
+                  <p class="card-text">
+                    <small class="text-muted">Last updated 3 mins ago</small>
+                  </p>
+                </div>
+              </div>
+            </div>
+        
+      </section>
+
+      <section>
+        <div class="parallax-twentyseven  text-center text-light text-uppercase"">
+          <h2> Rudranag</h2>
+        </div>
+      </section>
+
+      <section>
+        <div class="block">
+          <div class="card m-5">
+            <div class="row p-5 align-items-center">
+              <div class="col-md-4">
+                <img
+                  src="images\ep10.jpg"
+                  class="img-fluid rounded-start"
+                  alt="..."
+                />
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <p class="card-text">
+                    <span class="first-character RT">W</span> ith majestic waterfalls name Rudranag falls which lie in the route of Kheerganga,
+                    the trails of Rudranag cut through the rocky terrains and highly uneven paths which makes it highly challenging treks for the trekkers. 
+                    The most enchanting attraction near kasol is Rudranag because of its sharp and steep falls.
+                   
+                    Near Kasol with beautiful scenery and high mountain treks giving a beautiful experience on the Mountains.
+                  
+                  <p class="card-text">
+                    <small class="text-muted">Last updated 3 mins ago</small>
+                  </p>
+                </div>
+              </div>
+            </div>
+        
+      </section>
+      
+      <section>
+        <div class="parallax-nine  text-center text-light text-uppercase"">
+          <h2> Kheerganga</h2>
+        </div>
+      </section>
+
+      <section>
+        <div class="block">
+          <div class="card m-5">
+            <div class="row p-5 align-items-center">
+              <div class="col-md-4">
+                <img
+                  src="images\ep11.jpg"
+                  class="img-fluid rounded-start"
+                  alt="..."
+                />
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <p class="card-text">
+                    <span class="first-character RT">I</span>t is one the most daunting treks in the Himalayas region and India, but still it attracts lots of trekkers and campers because of the myth that it is a place where Lord Shiva meditated for thousands of years. 
+                    This trek is covered with dense pines and numerous streams which gives a soothing, 
+                    refreshing time to all its trekkers and is one of the best places for camping in Himachal.
+                    
+                     Kasol offers an affordable camping sites, beautiful views and delicious food and lots of adventure sports.
+                  
+                  <p class="card-text">
+                    <small class="text-muted">Last updated 3 mins ago</small>
+                  </p>
+                </div>
+              </div>
+            </div>
+        
+      </section>
+      </div>
+       <!--FOOTER-->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+   <div class="footer-basic">
+       <footer>
+           <div class="social"><a href="https://www.instagram.com/accounts/signup"><i class="icon ion-social-instagram"></i></a><a href="https://www.snapchat.com/add/login"><i class="icon ion-social-snapchat"></i></a><a href="https://twitter.com/login"><i class="icon ion-social-twitter"></i></a><a href="https://www.facebook.com/login.php"><i class="icon ion-social-facebook"></i></a></div>
+           <ul class="list-inline">
+               <li class="list-inline-item"><a href="#">Home</a></li>
+               <li class="list-inline-item"><a href="#">Services</a></li>
+               <li class="list-inline-item"><a href="#">About</a></li>
+               <li class="list-inline-item"><a href="terms.html">Terms</a></li>
+               <li class="list-inline-item"><a href="privacy.html">Privacy Policy</a></li>
+               <li class="list-inline-item"><a href="ax.html">FAQ</a></li>
+           </ul>
+           <p class="copyright">thecampingmonk © 2022</p>
+       </footer>
+   </div>	    
+<!-- Back to top button -->
+<button type="button" class="btn btn-danger btn-floating btn-lg" id="btn-back-to-top">
+  <i class="fas fa-arrow-up"></i>
+</button>
+<style>
+  .footer-basic a {
+      color: black !important;
+  }
+  </style>
+
+
+
+
+
+<!-- Explanation -->
+
+
+   <script>
+   //Get the button
+let mybutton = document.getElementById("btn-back-to-top");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function () {
+scrollFunction();
+};
+
+function scrollFunction() {
+if (
+document.body.scrollTop > 20 ||
+document.documentElement.scrollTop > 20
+) {
+mybutton.style.display = "block";
+} else {
+mybutton.style.display = "none";
+}
+}
+// When the user clicks on the button, scroll to the top of the document
+mybutton.addEventListener("click", backToTop);
+
+function backToTop() {
+document.body.scrollTop = 0;
+document.documentElement.scrollTop = 0;
+}
+</script> 
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
+

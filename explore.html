@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/32702421dd.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Bootstrap Example</title>
+  </head>
+  <body>
+
+            <!--navbar-->
+	   
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+              <style>
+              .navbar-collapse {
+                flex-basis: 0;
+                flex-grow: 0;
+                // For always expanded or extra full navbars, ensure content aligns itself
+                // properly vertically. Can be easily overridden with flex utilities.
+                }
+                .navbar>.container, .navbar>.container-fluid, .navbar>.container-lg, .navbar>.container-md, .navbar>.container-sm, .navbar>.container-xl, .navbar>.container-xxl {
+              display: flex;
+              flex-wrap: inherit;
+              align-items: center;
+              justify-content: space-evenly;
+          }
+              </style>
+                  <div class="container-fluid" >
+                <img class="img size=100px bg-transparent" src="/images/tmc logo.png"  alt="">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                          <a class="nav-link active" aria-current="page" href="//127.0.0.1:5500/index.html#"><i class="fa-solid fa-house-chimney"></i>Home</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="RESERVATION.html"><i class="fa-solid fa-mountain-sun"></i>Camping Reservation</a>
+                        </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fa-solid fa-arrow-down-short-wide"></i>Online bookings
+                      </a>
+                      <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="bus.html"><i class="fa-solid fa-bus p-2" ></i>Bus Booking</i></a></li>
+                      <li><a class="dropdown-item" href="train.html"><i class="fa-solid fa-train-subway p-2"></i>Train Booking</a></li>
+                      <li><a class="dropdown-item" href="flight.html"><i class="fa-solid fa-plane-departure p-2"></i>Flights Booking</a></li>
+                      <li><a class="dropdown-item" href="hotels.html"><i class="fa-solid fa-hotel p-2"></i>Hotels Booking</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fa-solid fa-globe"></i>Tour and packages
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="leh itenary.html"><i class="fa-solid fa-suitcase"></i>Leh-ladakh package</i></a></li>
+                    <li><a class="dropdown-item" href="manali package.html"><i class="fa-solid fa-suitcase"></i>Manali package</a></li>
+                    <li><a class="dropdown-item" href="spiti kaza.html"><i class="fa-solid fa-suitcase"></i>Spiti-Kaza packages</a></li>
+                    <li><a class="dropdown-item" href="dharamshala .html"><i class="fa-solid fa-suitcase"></i>Dharamshala package</a></li>
+                    <li><a class="dropdown-item" href="killar.html"><i class="fa-solid fa-suitcase"></i>Killar-kishtawar packages </i></a></li>
+                    <li><a class="dropdown-item" href="tirthan.html"><i class="fa-solid fa-suitcase"></i>Tirthan package</a></li>
+                    <li><a class="dropdown-item" href="chitkul .html"><i class="fa-solid fa-suitcase"></i>Kinnaur-Chitkul packages</a></li>
+                    <li><a class="dropdown-item" href="shimla .html"><i class="fa-solid fa-suitcase"></i>Shimla-kasauli packages</a></li>
+                    <li><a class="dropdown-item" href="dalhousie.html"><i class="fa-solid fa-suitcase"></i>Dalhousie-chamba packages</a></li>
+                    <li><a class="dropdown-item" href="mandi.html"><i class="fa-solid fa-suitcase"></i>Barot-Mandi packages</a></li>
+                  </ul>
+                </li>
+                
+                        <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      <i class="fa-solid fa-bars"></i>More-Options
+                          </a>
+                          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="contact.html"><i class="fa-solid fa-people-arrows-left-right p-2""></i>Contact-us</a></li>
+                            <li><a class="dropdown-item" href="enquiry.html"><i class="fa-solid fa-magnifying-glass p-2""></i>Enquiry</a></li>
+                            <li><a class="dropdown-item" href="feedback.html"><i class="fa-solid fa-comments p-2""></i>Feedback</a></li>
+                      
+                          </ul>
+                        </li>
+                        
+                      </ul>
+                      
+                    </div>
+                  </div>
+                </nav>   
+                   
+
+    <!-- boxes -->
+
+    <div id="parallax-world-of-ugg">
+      <section>
+        <div class="title m-5 p-3 text-center text-uppercase">
+          <h3>Let's do some</h3>
+          <h1>TREKS IN HIMACHAL PRADESH</h1>
+        </div>
+      </section>
+
+      <section>
+        <div class="parallax-one text-center text-light text-uppercase">
+          <h2>RAJ GUNDHA TREK</h2>
+        </div>
+      </section>
+
+      <section>
+        <div class="block">
+          <div class="card m-5">
+            <div class="row p-5 align-items-center">
+              <div class="col-md-6">
+                <img
+                  src="images\rajgundha.jpg"
+                  class="img-fluid rounded-start"
+                  alt="..."
+                />
+              </div>
+              <div class="col-md-6">
+                <div class="card-body">
+                  <p class="card-text">
+                    <span class="first-character RT">T</span> he valley we are
+                    talking about is full of life and one can experience the
+                    positive energy. Trekking for 16 km that connects two road
+                    heads can be done in a day or 2. One can experience the
+                    village life, nature, wildlife, birding, local culture,
+                    trekking, camping and angling..
+                    are twin villages which have a beautiful environment,
+                    Villages are well connected with other villages but still
+                    not connected with the road and have amazing views and the
+                    loveable aroma all around the valley. This valley is full of
+                    birds and wildlife. Villagers here live here for 6 months
+                    and in winters move to lower places with their cattle’s to
+                    save them from snow and cold. Houses made up of old
+                    traditional way with stone and mud. Earlier this area was
+                    under wildlife sanctuary but recently village area removed
+                    from wildlife and used as agriculture land.
+                  </p>
+
+                  <p class="card-text">
+                    <small class="text-muted">Last updated 3 mins ago</small>
+                  </p>
+                </div>
+              </div>
+            </div>
+        
+      </section>
+
+    
+  
+        <section>
+          <div class="parallax-two text-center text-light text-uppercase">
+            <h2>TRIUND TREK</h2>
+          </div>
+        </section>
+  
+        <section>
+          <div class="block">
+            <div class="card m-5">
+              <div class="row p-5 align-items-center">
+                <div class="col-md-6">
+                  <img
+                    src="images\triund.jpg"
+                    class="img-fluid rounded-start"
+                    alt="..."
+                  />
+                </div>
+                <div class="col-md-6">
+                  <div class="card-body">
+                    <p class="card-text">
+                      <span class="first-character RT">T</span>he 10-kilometre Triund Trek Distance comprises gradual, steep
+                      ascents and easy descents. The entire terrain is easy, scenic and
+                      doable by all kinds of trekkers. While the first five kilometres
+                      of the trek are simple, easy to do and not quite undulating, it is
+                      the final kilometre which is steeper than the rest, and requires
+                      extra time to trail. During this part of the trek, the trail is
+                      steep, and trekkers need to walk sturdily. This stretch of the
+                      trek is popularly known as 22 Curves, because of the 22 sharp
+                      curves that you get en route. In addition to experiencing stunning
+                      views of the forest and snow-capped mountains, you can also visit
+                      some nearby places on your trek to Triund. Some of these include
+                      the serene Bhagsu Falls, which is a popular sightseeing
+                      attraction, known for its gushing white waterfall. The home of the
+                      Dalai Lama, the Namgyal Monastery, also falls on the way to
+                      Triund, where you can learn a lot about the Tibetan culture and
+                      beliefs. You can also pay a visit to the holy Gallu Devi and Guna
+                      Devi temples.
+                    </p>
+  
+                    <p class="card-text">
+                      <small class="text-muted">Last updated 3 mins ago</small>
+                    </p>
+                  </div>
+                </div>
+              </div>
+          
+        </section>
+      <section>
+        <div class="parallax-three text-center text-light text-uppercase">
+          <h2>Kareri lake trek</h2>
+        </div>
+      </section>
+
+      <section>
+        <div class="block"></div>
+        <div class="card m-5">
+          <div class="row p-5 align-items-center">
+            <div class="col-md-6">
+              <img
+                src="images\kareri.jpg"
+                class="img-fluid rounded-start"
+                alt="..."
+              />
+            </div>
+            <div class="col-md-6">
+              <div class="card-body">
+                <p class="card-text">
+            <span class="first-character ">K</span>areri village is known to most locals in Dharamshala. The trail
+            goes through Kareri village and starts through mixed pine and
+            broadleaf forests. Birds such as the black drongo and red-billed
+            blue magpie are commonly seen. A little care is needed as the
+            undergrowth is thick and the ground is littered with pine needles,
+            making it a little slippery. After about 15 minutes the trail
+            curves upwards towards a metal road. After joining the road, you
+            walk along the road for about 10-15 mins until Nolli bridge. The
+            trail then curves off just before the bridge. This point is easily
+            identifiable by a small shack that sells soft drinks and packaged
+            food items. The trail then goes back into the forest.
+          </p>
+          
+          <p class="card-text">
+            <small class="text-muted">Last updated 3 mins ago</small>
+          </p>
+        </div>
+      </section>
+
+
+      <section>
+        <div class="parallax-four text-center text-light text-uppercase">
+          <h2>Beas Kund Trek</h2>
+        </div>
+      </section>
+
+      <section>
+        <div class="block"></div>
+        <div class="card m-5">
+          <div class="row p-5 align-items-center">
+            <div class="col-md-6">
+              <img
+                src="images\beas kund.jpg"
+                class="img-fluid rounded-start"
+                alt="..."
+              />
+            </div>
+            <div class="col-md-6">
+              <div class="card-body">
+                <p class="card-text">
+            <span class="first-character ">E</span>mbark on an enthralling trekking expedition with this Beas Kund Trek that lets you traverse through the lush green grasslands and tall mountains of this scenic location, Manali. Soothe your senses with the views of the picturesque lake through which the river Beas emerges and spot a contrasting sight of the crystal clear waters of the river, based amidst the eye-catching mountain peaks of Pir Panjal.
+            Conquer the mighty mountains of Himachal Pradesh and reach an altitude of 3,810 meters to catch glimpses of summit views of big mountains of Manali like Friendship Peak, Shitidhar, Ladakhi, and Hanuman Tibba.
+             Besides, you can treat your eyes with the rare glimpses of Mt Indrasen, Deo Tibba, and more such peaks from the Pir Panjal range, if you are fortunate enough. Enjoy a delightful camping session during the thrilling trekking expedition, when you spend the chilly night stargazing at the vast expanse of star-studded night skies in your tent.
+          </p>
+          
+          <p class="card-text">
+            <small class="text-muted">Last updated 3 mins ago</small>
+          </p>
+        </div>
+      </section>
+
+
+      <section>
+        <div class="parallax-five text-center text-light text-uppercase">
+          <h2>Churdhar trek</h2>
+        </div>
+      </section>
+
+      <section>
+        <div class="block"></div>
+        <div class="card m-5">
+          <div class="row p-5 align-items-center">
+            <div class="col-md-6">
+              <img
+                src="images\CHURDHARTREK.jpg"
+                class="img-fluid rounded-start"
+                alt="..."
+              />
+            </div>
+            <div class="col-md-6">
+              <div class="card-body">
+                <p class="card-text">
+            <span class="first-character ">C</span>hurdhar aka Churi-Chandni Dhar (Bangles of snow ridge) is the
+            highest peak in the outside Himalayan range.<br />
+            The peak is surrounded with a 56 square km forest sanctuary, which
+            make the trekking a delightful affair. The trek is a steep hike
+            inside a dense Deodar forest, terraced fields and gujjar pasture
+            lands. Churdhar peak is surrounded with a 56 square km forest
+            sanctuary and home to a vast species of flora & fauna. The trek is
+            a steep hike inside a dense Deodar forest, terraced fields and
+            gujjar pasture lands. The whole sanctuary is enrich with several
+            species of flora & fauna. The majority of trees that can be seen
+            while trekking to Churdhar peak includes deodar, oak & pine. Apart
+            from the trees one may also find lots of medicinal herbs such as
+            Aloe Vera, Amaranthus spinosus and Wild Himalayan Cherry . This
+            trek is a bliss for Wild Life admirers, there are several species
+            of birds that can be seen during the trek. Some of these birds
+            include Himalayan monal, red junglefowl, Indian peafowl,
+            multi-colored laughing thrush and the koklass pheasant Legions of
+            creatures has made these mountains their home.<br />
+            Animals that commonly seen around this mountain include Musk deer,
+            barking deer, goral, leopard, wild boar, pika and Asiatic black
+            bear. Shirgul Devta Temple, according to Purana is dedicated to
+            Lord Shiva.
+          
+          <p class="card-text">
+            <small class="text-muted">Last updated 3 mins ago</small>
+          </p>
+        </div>
+      </section>
+
+
+      <section>
+        <div class="parallax-six text-center text-light text-uppercase">
+          <h2>Kheer Ganga trek</h2>
+        </div>
+      </section>
+
+      <section>
+        <div class="block"></div>
+        <div class="card m-5">
+          <div class="row p-5 align-items-center">
+            <div class="col-md-6">
+              <img
+                src="images\kheerganga.jpg"
+                class="img-fluid rounded-start"
+                alt="..."
+              />
+            </div>
+            <div class="col-md-6">
+              <div class="card-body">
+                <p class="card-text">
+            <span class="first-character ">K</span>heerganga is one of the unique Himalayan treks in which you are
+            rewarded with natural hot water springs on reaching the summit at
+            almost 10,000 feet. This trek takes you deep into the Parvati
+            Valley by walking alongside the babbling Beas River, ascending
+            through pine and oak forests and traversing the verdant gorge. On
+            the way to the top, you will come across many beautiful waterfalls
+            and a Shiva temple. The snowy Himalayan peaks will accompany you
+            throughout the day. The one-of-a-kind experience of relaxing in
+            the vistas of snow-capped peaks will remain with you forever as
+            memories. Be it a memorable walk along the sparkling Parvati river
+            or savoring Israeli food at colourful cafes, everything here would
+            be a little more unique.
+          
+          <p class="card-text">
+            <small class="text-muted">Last updated 3 mins ago</small>
+          </p>
+        </div>
+      </section>
+
+      <section>
+        <div class="parallax-seven text-center text-light text-uppercase">
+          <h2>
+            Indrahar Pass Trek</h2>
+        </div>
+      </section>
+
+      <section>
+        <div class="block"></div>
+        <div class="card m-5">
+          <div class="row p-5 align-items-center">
+            <div class="col-md-6">
+              <img
+                src="images\indrahar.jpg"
+                class="img-fluid rounded-start"
+                alt="..."
+              />
+            </div>
+            <div class="col-md-6">
+              <div class="card-body">
+                <p class="card-text">
+            <span class="first-character ">W</span>ith beautiful landscapes, sparkling streams, deep gorges,
+            tranquil lakes and deodar forest all throughout the journey, the
+            Indrahar Pass Trek in Himachal Pradesh is one of the most awe –
+            inspiring treks in the Indian Himalayan region that bursts the
+            mind of several travelers from all age group. The journey is a
+            perfect combination of diverse nature and traditional colors of
+            Himachal, and it stretches from an elevation of 2,875 meters to
+            4,425 meters. The Indrahar Pass forms the border between Kangra
+            and Chamba districts and lay bare the stretch of Dhauladhar range
+            with the fascinating glimpse of hamlets below. It also uncovers
+            the tranquil waters of Lake Mankiani and Kareri. Nonetheless, the
+            dark boulder road tracks of the Dhauladhar and rhododendrons and a
+            wide range of avifauna at different altitude simply enriches the
+            journey and wins the heart of travelers.<br />
+            The Indrahar Pass trek, which is one of the easy to moderate treks
+            in Himachal Pradesh, takes off from McLeodganj, which is the seat
+            of Dalai Lama, to Triund at 2,875 meters. The trek to Triund via
+            Dhramkot village and Galu Devi reveals a magnificent view of the
+            Kangra Valley and Dharamshala town below. From Triund, the trail
+            leads off to Lahesh Cave via Laka passing through a meadow
+            scattered with boulders. From Lahesh Cave the journey for the day
+            commences for Indrahar Pass walking over the rocks straight on the
+            North East face of the ridge, keeping the steep wall of Mon to its
+            right. The trail continues over the crest and comes across several
+            ascent
+          <p class="card-text">
+            <small class="text-muted">Last updated 3 mins ago</small>
+          </p>
+        </div>
+      </section>
+      <section>
+        <div class="parallax-eight text-center text-light text-uppercase">
+          <h2>Sar Pass Trek, Kasol</h2>
+        </div>
+      </section>
+
+      <section>
+        <div class="block"></div>
+        <div class="card m-5">
+          <div class="row p-5 align-items-center">
+            <div class="col-md-6">
+              <img
+                src="images\sar.jpg"
+                class="img-fluid rounded-start"
+                alt="..."
+              />
+            </div>
+            <div class="col-md-6">
+              <div class="card-body">
+                <p class="card-text">
+            <span class="first-character ">S</span>ar Pass is an old favorite of trekkers in Kullu Region. The trek
+            is recommended for all adventure souls who like snow and high
+            mountains, irrespective of the prior experience. Starting from
+            Kasol, Sar pass trek takes you through thick pine forests,
+            beautiful alpine meadows, quaint villages, snow-covered mountains
+            and some of the most splendid landscape making it one of the best
+            treks for beginners. On one of the days of the trek, you will pass
+            by a small frozen lake (Sar in the local dialect) from which the
+            Sar Pass trek gets its name. The total trek distance is 48 km.
+            Close to a height of 14000 ft, the view from the pass is that of
+            the majestic mountains of Parvati valley. The trek is blessed with
+            varied terrain and breath-taking views of the surrounding
+            mountains giving you a very thrilling and enriching experience.
+          </p>
+          <p class="card-text">
+            <small class="text-muted">Last updated 3 mins ago</small>
+          </p>
+        </div>
+      </section>
+
+      <section>
+        <div class="parallax-nine text-center text-light text-uppercase">
+          <h2>Pin Parvati Trek</h2>
+        </div>
+      </section>
+
+      <section>
+        <div class="block"></div>
+        <div class="card m-5">
+          <div class="row p-5 align-items-center">
+            <div class="col-md-6">
+              <img
+                src="images\pinparvati.jpg"
+                class="img-fluid rounded-start"
+                alt="..."
+              />
+            </div>
+            <div class="col-md-6">
+              <div class="card-body">
+                <p class="card-text">
+            <span class="first-character ">T</span>he Pin Parvati Pass is a thrilling challenge for any seasoned
+            trekker. It’s a long expedition that gives trekkers a massive dose
+            of adventure, beauty and a sense of achievement. The exhilaration
+            of traversing a 17,457 ft pass is an experience of a lifetime. Pin
+            Parvati Pass trek provides the most spectacular traverses, right
+            from the forest and verdant meadows of the Parvati Valley to the
+            Buddhist villages in the Trans-Himalayan region of Spiti. The
+            sharp contrast in landscapes, culture, flora and fauna will catch
+            you off-guard. Within hours, you’ll walk from cold dry mountain
+            desert region of Spiti to the rich biodiversity in Parvati Valley.
+            As you climb higher to Pin Parvati Pass, the bird’s-eye view of
+            the Parvati and Pin Valley is fantastic. Pin Parvati has a host of
+            unique experiences to offer you: from the pulley bridge at Tunda
+            Bhuj to marshlands of Mantalai to alpine meadows of Odi Thach,
+            dense forests near Kheerganga and glacier near the Pass. Pin
+            Parvati trek builds from cold dry deserts of Spiti and its unique
+            settings to the lush, wet greenery of Parvati valley. The
+            greenery, the flowers of Odi Thach hits you harder after days of
+            trekking among wind-carved rock formations and glaciers. Near the
+            end of trek, you also experience the hot water springs at Parvati
+            Kund at Kheerganga. Words cannot describe the experience of a hot
+            water bath here after a hard day of trekking.
+          
+          <p class="card-text">
+            <small class="text-muted">Last updated 3 mins ago</small>
+          </p>
+        </div>
+      </section>
+
+      <section>
+        <div class="parallax-ten text-center text-light text-uppercase">
+          <h2>Kinner Kailash Trek</h2>
+        </div>
+      </section>
+
+      <section>
+        <div class="block"></div>
+        <div class="card m-5">
+          <div class="row p-5 align-items-center">
+            <div class="col-md-6">
+              <img
+                src="images\kinner.jpg"
+                class="img-fluid rounded-start"
+                alt="..."
+              />
+            </div>
+            <div class="col-md-6">
+              <div class="card-body">
+                <p class="card-text">
+            <span class="first-character ">T</span>he Kinnaur Kailasha (locally known as Kinner Kailash) is a
+            mountain in the Kinnaur district of the Indian state Himachal
+            Pradesh. Kinnaur Kailash has a height of 17200 ft and is
+            considered sacred by both Hindu and Buddhist Kinnauris. The beauty
+            of Kinnaur comes from three of the world's grand mountain ranges -
+            the Zanskar, the Greater Himalaya, and the Dhauladhar, whose views
+            this trek will cover. The grand parikrama begins from Kalpa via
+            Triung valley and back to Kalpa via Sangla valley. The Sutlej
+            River increases the trek's wonders rising from the southern slopes
+            of Kailash Parvat in Tibet flows through the Kinnaur valley. This
+            trek is in the Bucket list of every trek enthusiasts
+          
+          <p class="card-text">
+            <small class="text-muted">Last updated 3 mins ago</small>
+          </p>
+        </div>
+      </section>
+
+      <section>
+        <div class="parallax-eleven text-center text-light text-uppercase">
+          <h2>Bara Bhangal</h2>
+        </div>
+      </section>
+
+      <section>
+        <div class="block"></div>
+        <div class="card m-5">
+          <div class="row p-5 align-items-center">
+            <div class="col-md-6">
+              <img
+                src="images\barabangal.jpg"
+                class="img-fluid rounded-start"
+                alt="..."
+              />
+            </div>
+            <div class="col-md-6">
+              <div class="card-body">
+                <p class="card-text">
+            <span class="first-character ">T</span>he  Bara Bhangal trek is one of the hardest and most adventurous treks in
+            Himachal Pradesh. It is a high-altitude trek nestled at 4875 mts above
+            sea level. It is an alpine terrain between the Kullu Valley and
+            Dharamshala is one of the most spectacular and little-known regions of
+            the Western Himalaya. Bara Bhangal trek offers you to witness the
+            majestic view of the Dhauladhar and Pin Panjal range. The major
+            tourist attractions coming en-route are Lama Dugh, Riyali Thach,
+            Kalihani, Devi ki Marhi, Dal Marhi, Marhi, Plachak, Rajgundha. The
+            trek that normally begins from the Hidimba Temple in the Manali town
+            takes the ascenders across the thick alpine forests to reach the
+            campsites of Lamadug. The trail is moderate till Lamadug and then the
+            path continues through the Rhododendron and Pine forests to reach the
+            next step of camping at Riyali Thach. Then from Riyali Thach, the
+            trail goes to the Kalihani Pass at an altitude of 4800 m which is the
+            most difficult route that passes through visualizing ice, snow on the
+            glacier, and moraines at the valley. One needs to be careful walking
+            on the glacier that it can be slippery and fatal. Then one will cross
+            the pass and descends a vertical section of snow and glaciers to the
+            Donku Thach. After Donku Thach the trail slants along the Kalihani
+            river then enter into the wild forests till Dev ki Marhi. From this
+            point, the forest accompanies with wild flora and fauna until the
+            campsite at Dal Marhi. After a few days of climbing, finally, the trek
+            ends at the Bara Bhangal village. Once in Barabhangal, one can explore
+            the life of isolated village habitats. Later, the trek descends
+            through Plachak, Rajgundha, and then towards Billing which is a famous
+            spot for paragliding. From Billing, take a taxi to Dharamshala and
+            depart to your preferred destinations. The whole trek takes at least
+            10 days.
+          
+          <p class="card-text">
+            <small class="text-muted">Last updated 3 mins ago</small>
+          </p>
+        </div>
+      </section>
+
+      <section>
+        <div class="parallax-twelve text-center text-light text-uppercase text-light">
+          <h2>Chhota Bhangal</h2>
+        </div>
+      </section>
+
+      <section>
+        <div class="block"></div>
+        <div class="card m-5">
+          <div class="row p-5 align-items-center">
+            <div class="col-md-6">
+              <img
+                src="images\chotabangal.jpg"
+                class="img-fluid rounded-start"
+                alt="..."
+              />
+            </div>
+            <div class="col-md-6">
+              <div class="card-body">
+                <p class="card-text">
+            <span class="first-character ">T</span>he Chhota Bhangal region in Himachal Pradesh lies primarily in Uhl
+            valley near the Dhauladhar range divide between Kangra/Chamba, on
+            Kangra side. It's a beautiful and relatively unexplored region
+            dotted with beautiful terraced fields on mountain slopes all
+            around. The Chhota Bhangal region still retains much of its
+            traditional look as compared to other 'developed' hill stations.
+            This particular trail that we are running the trek through, has a
+            gradual gradient for most of the route; hence no steep ascents are
+            involved.
+          
+          <p class="card-text">
+            <small class="text-muted">Last updated 3 mins ago</small>
+          </p>
+        </div>
+      </section>
+
+
+
+    </div>
+   <!--FOOTER-->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+   <div class="footer-basic">
+    <style>
+      
+    </style>
+       <footer>
+           <div class="social"><a href="https://www.instagram.com/accounts/signup"><i class="icon ion-social-instagram"></i></a><a href="https://www.snapchat.com/add/login"><i class="icon ion-social-snapchat"></i></a><a href="https://twitter.com/login"><i class="icon ion-social-twitter"></i></a><a href="#https://www.facebook.com/login.php"><i class="icon ion-social-facebook"></i></a></div>
+           <ul class="list-inline">
+               <li class="list-inline-item"><a href="#">Home</a></li>
+               <li class="list-inline-item"><a href="#">Services</a></li>
+               <li class="list-inline-item"><a href="#">About</a></li>
+               <li class="list-inline-item"><a href="terms.html">Terms</a></li>
+               <li class="list-inline-item"><a href="privacy.html">Privacy Policy</a></li>
+               <li class="list-inline-item"><a href="ax.html">FAQ</a></li>
+           </ul>
+           <p class="copyright">thecampingmonk © 2022</p>
+       </footer>
+   </div>	    
+<!-- Back to top button -->
+<button type="button" class="btn btn-danger btn-floating btn-lg" id="btn-back-to-top">
+  <i class="fas fa-arrow-up"></i>
+</button>
+<style>
+  .footer-basic a {
+      color: black !important;
+  }
+  </style>
+
+
+
+
+<!-- Explanation -->
+
+
+   <script>
+   //Get the button
+let mybutton = document.getElementById("btn-back-to-top");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function () {
+scrollFunction();
+};
+
+function scrollFunction() {
+if (
+document.body.scrollTop > 20 ||
+document.documentElement.scrollTop > 20
+) {
+mybutton.style.display = "block";
+} else {
+mybutton.style.display = "none";
+}
+}
+// When the user clicks on the button, scroll to the top of the document
+mybutton.addEventListener("click", backToTop);
+
+function backToTop() {
+document.body.scrollTop = 0;
+document.documentElement.scrollTop = 0;
+}
+</script> 
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

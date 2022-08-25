@@ -1,0 +1,409 @@
+i.fa-solid {
+  color: #dc3545;
+  margin-right: 7px;
+}
+@media (max-width: 768px) {
+  .card-img-overlay {
+    position: relative;
+    width: 100%;
+  }
+}
+@import url(https://fonts.googleapis.com/css?family=Oswald:300,400,700);
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,200italic,300italic,400italic,600italic,700italic,900italic);
+
+/* Helpers */
+/**************************/
+/* Typography */
+/**************************/
+#parallax-world-of-ugg h1 {
+  font-family: "Oswald", sans-serif;
+}
+#parallax-world-of-ugg h2 {
+  font-family: "Oswald", sans-serif;
+  font-size: 70px;
+  letter-spacing: 10px;
+}
+#parallax-world-of-ugg h3 {
+  font-family: "Oswald", sans-serif;
+  letter-spacing: 8px;
+}
+
+.first-character {
+  font-weight: 400;
+  float: left;
+  font-size: 84px;
+  line-height: 64px;
+  padding-top: 4px;
+  padding-right: 8px;
+  padding-left: 3px;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+.sc {
+  color: #3b8595;
+}
+.ny {
+  color: #3d3c3a;
+}
+.atw {
+  color: #c48660;
+}
+
+/* Section - Block */
+/**************************/
+#parallax-world-of-ugg .block {
+  text-align: justify;
+}
+
+/* Section - Parallax */
+/**************************/
+#parallax-world-of-ugg .parallax-one,
+#parallax-world-of-ugg .parallax-two,
+#parallax-world-of-ugg .parallax-three,
+#parallax-world-of-ugg .parallax-four,
+#parallax-world-of-ugg .parallax-five,
+#parallax-world-of-ugg .parallax-six,
+#parallax-world-of-ugg .parallax-seven,
+#parallax-world-of-ugg .parallax-eight,
+#parallax-world-of-ugg .parallax-nine,
+#parallax-world-of-ugg .parallax-ten,
+#parallax-world-of-ugg .parallax-eleven,
+#parallax-world-of-ugg .parallax-twelve,
+#parallax-world-of-ugg .parallax-thirteen,
+#parallax-world-of-ugg .parallax-fourteen,
+#parallax-world-of-ugg .parallax-fifteen,
+#parallax-world-of-ugg .parallax-sixteen,
+#parallax-world-of-ugg .parallax-seventeen,
+#parallax-world-of-ugg .parallax-eighteen,
+#parallax-world-of-ugg .parallax-nineteen,
+#parallax-world-of-ugg .parallax-twenty,
+#parallax-world-of-ugg .parallax-twentyone,
+#parallax-world-of-ugg .parallax-twentytwo,
+#parallax-world-of-ugg .parallax-twentythree,
+#parallax-world-of-ugg .parallax-twentyfour,
+#parallax-world-of-ugg .parallax-twentyfive,
+#parallax-world-of-ugg .parallax-twentysix,
+#parallax-world-of-ugg .parallax-twentyseven,
+#parallax-world-of-ugg .parallax-twentyeight,
+#parallax-world-of-ugg .parallax-twentynine,
+#parallax-world-of-ugg .parallax-thirty,
+#parallax-world-of-ugg .parallax-thirtyone,
+#parallax-world-of-ugg .parallax-thirtytwo,
+#parallax-world-of-ugg .parallax-thirtythree,
+#parallax-world-of-ugg .parallax-thirtyfour,
+#parallax-world-of-ugg .parallax-thirtyfive,
+#parallax-world-of-ugg .parallax-thirtysix,
+#parallax-world-of-ugg .parallax-thirtyseven,
+#parallax-world-of-ugg .parallax-thirtyeight,
+#parallax-world-of-ugg .parallax-thirtynine,
+#parallax-world-of-ugg .parallax-forty,
+#parallax-world-of-ugg .parallax-fortyone,
+#parallax-world-of-ugg .parallax-fortytwo,
+#parallax-world-of-ugg .parallax-fortythree,
+#parallax-world-of-ugg .parallax-fortyfour,
+#parallax-world-of-ugg .parallax-fortyfive,
+#parallax-world-of-ugg .parallax-fortysix,
+#parallax-world-of-ugg .parallax-fortyseven,
+#parallax-world-of-ugg .parallax-fortyeight,
+#parallax-world-of-ugg .parallax-fortynine,
+#parallax-world-of-ugg .parallax-fifty,
+#parallax-world-of-ugg .parallax-fiftyone,
+#parallax-world-of-ugg .parallax-fiftytwo,
+#parallax-world-of-ugg .parallax-fiftythree,
+#parallax-world-of-ugg .parallax-fiftyfour,
+#parallax-world-of-ugg .parallax-fiftyfive,
+#parallax-world-of-ugg .parallax-fiftysix,
+#parallax-world-of-ugg .parallax-fiftyseven,
+#parallax-world-of-ugg .parallax-fiftyeight,
+#parallax-world-of-ugg .parallax-fiftynine,
+#parallax-world-of-ugg .parallax-sixty,
+#parallax-world-of-ugg .parallax-sixtyone,
+#parallax-world-of-ugg .parallax-sixtytwo {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  background-attachment: fixed;
+  background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+#parallax-world-of-ugg .parallax-one {
+  background-image: url(https://images.unsplash.com/photo-1415018255745-0ec3f7aee47b?dpr=1&auto=format&fit=crop&w=1500&h=938&q=80&cs=tinysrgb&crop=);
+}
+#parallax-world-of-ugg .parallax-two {
+  background-image: url(/images/benjamin-voros-phIFdC6lA4E-unsplash.jpg);
+}
+#parallax-world-of-ugg .parallax-three {
+  background-image: url(https://images.unsplash.com/photo-1440688807730-73e4e2169fb8?dpr=1&auto=format&fit=crop&w=1500&h=1001&q=80&cs=tinysrgb&crop=);
+}
+#parallax-world-of-ugg .parallax-four {
+  background-image: url(/images/john-towner-JgOeRuGD_Y4-unsplash.jpg);
+}
+#parallax-world-of-ugg .parallax-five {
+  background-image: url(/images/bailey-zindel-NRQV-hBF10M-unsplash.jpg);
+}
+#parallax-world-of-ugg .parallax-six {
+  background-image: url(/images/dorel-gnatiuc-rlXgUH7Sh_I-unsplash.jpg);
+}
+#parallax-world-of-ugg .parallax-seven {
+  background-image: url(/images/marek-piwnicki-LQYxMsOljAI-unsplash.jpg);
+}
+#parallax-world-of-ugg .parallax-eight {
+  background-image: url(/images/michal-parzuchowski-EFvP9cHipMQ-unsplash.jpg);
+}
+#parallax-world-of-ugg .parallax-nine {
+  background-image: url(/images/nicolai-kramer-reZbvcVASPI-unsplash.jpg);
+}
+#parallax-world-of-ugg .parallax-ten {
+  background-image: url(/images/samsommer-vddccTqwal8-unsplash.jpg);
+}
+#parallax-world-of-ugg .parallax-eleven {
+  background-image: url(/images/ales-krivec-nO0V_T0g2fM-unsplash.jpg);
+}
+#parallax-world-of-ugg .parallax-twelve {
+  background-image: url(/images/cristina-gottardi-CSpjU6hYo_0-unsplash.jpg);
+}
+#parallax-world-of-ugg .parallax-thirteen {
+  background-image: url(/images/alex-zamora-dINil0ZRcNs-unsplash.jpg);
+}
+#parallax-world-of-ugg .parallax-fourteen {
+  background-image: url(/images/lea-luminarias-n6LfGy6J88w-unsplash.jpg);
+}
+
+#parallax-world-of-ugg .parallax-fifteen {
+  background-image: url(/images/lucas-mordzin-I4W8z_zMRlE-unsplash.jpg);
+}
+#parallax-world-of-ugg .parallax-sixteen {
+  background-image: url(/images/nicolas-tissot-Z2yEVIbH-XU-unsplash.jpg);
+}
+#parallax-world-of-ugg .parallax-seventeen {
+  background-image: url(/images/tomas-sobek-jTP3p3tAF-E-unsplash.jpg);
+}
+#parallax-world-of-ugg .parallax-eighteen {
+  background-image: url(/images/tor-stryger-NHEV2Vhv_uU-unsplash.jpg);
+}
+#parallax-world-of-ugg .parallax-nineteen {
+  background-image: url(/images/e1.jpg);
+}
+#parallax-world-of-ugg .parallax-twenty {
+  background-image: url(/images/e2.jpg);
+}
+#parallax-world-of-ugg .parallax-twentyone {
+  background-image: url(/images/e3.jpg);
+}
+#parallax-world-of-ugg .parallax-twentytwo {
+  background-image: url(/images/e4.jpg);
+}
+#parallax-world-of-ugg .parallax-twentythree {
+  background-image: url(/images/e5.jpg);
+}
+#parallax-world-of-ugg .parallax-twentyfour {
+  background-image: url(/images/e6.jpg);
+}
+#parallax-world-of-ugg .parallax-twentyfive {
+  background-image: url(/images/e7.jpg);
+}
+#parallax-world-of-ugg .parallax-twentysix {
+  background-image: url(/images/e8.jpg);
+}
+#parallax-world-of-ugg .parallax-twentyseven {
+  background-image: url(/images/e9.jpg);
+}
+#parallax-world-of-ugg .parallax-twentyeight {
+  background-image: url(/images/e10.jpg);
+}
+#parallax-world-of-ugg .parallax-twentynine {
+  background-image: url(/images/e11.jpg);
+}
+#parallax-world-of-ugg .parallax-thirty {
+  background-image: url(/images/L5.jpg);
+}
+
+#parallax-world-of-ugg .parallax-thirtyone {
+  background-image: url(/images/L11.jpg);
+}
+
+#parallax-world-of-ugg .parallax-thirtytwo {
+  background-image: url(/images/L12.jpg);
+}
+
+#parallax-world-of-ugg .parallax-thirtythree {
+  background-image: url(/images/L13.jpg);
+}
+
+#parallax-world-of-ugg .parallax-thirtyfour {
+  background-image: url(/images/L14.jpg);
+}
+
+#parallax-world-of-ugg .parallax-thirtyfive {
+  background-image: url(/images/L15.jpg);
+}
+
+#parallax-world-of-ugg .parallax-thirtysix {
+  background-image: url(/images/L16.jpg);
+}
+
+#parallax-world-of-ugg .parallax-thirtyseven {
+  background-image: url(/images/L17.jpg);
+}
+#parallax-world-of-ugg .parallax-thirtyeight {
+  background-image: url(/images/c6.jpg);
+}
+#parallax-world-of-ugg .parallax-thirtynine {
+  background-image: url(/images/c5.jpg);
+}
+#parallax-world-of-ugg .parallax-forty {
+  background-image: url(/images/d5.jpg);
+}
+
+#parallax-world-of-ugg .parallax-fortyone {
+  background-image: url(/images/d4.jpg);
+}
+
+#parallax-world-of-ugg .parallax-fortytwo {
+  background-image: url(/images/d3.jpg);
+}
+#parallax-world-of-ugg .parallax-fortythree {
+  background-image: url(/images/dd1.jpg);
+}
+
+#parallax-world-of-ugg .parallax-fortyfour {
+  background-image: url(/images/dd3.jpg);
+}
+
+#parallax-world-of-ugg .parallax-fortyfive {
+  background-image: url(/images/dd5.jpeg);
+}
+#parallax-world-of-ugg .parallax-fortysix {
+  background-image: url(/images/k5.jpg);
+}
+#parallax-world-of-ugg .parallax-fortyseven {
+  background-image: url(/images/k7.jpg);
+}
+#parallax-world-of-ugg .parallax-fortyeight {
+  background-image: url(/images/k6.jpg);
+}
+#parallax-world-of-ugg .parallax-fortynine {
+  background-image: url(/images/k8.jpg);
+}
+#parallax-world-of-ugg .parallax-fifty {
+  background-image: url(/images/m1.jpg);
+}
+
+#parallax-world-of-ugg .parallax-fiftyone {
+  background-image: url(/images/m3.jpg);
+}
+
+#parallax-world-of-ugg .parallax-fiftytwo {
+  background-image: url(/images/mn1.jpg);
+}
+#parallax-world-of-ugg .parallax-fiftythree {
+  background-image: url(/images/prasharlake.jpg);
+}
+#parallax-world-of-ugg .parallax-fiftyfour {
+  background-image: url(/images/rewalsar.jpg);
+}
+#parallax-world-of-ugg .parallax-fiftyfive {
+  background-image: url(/images/rewalsar.jpg);
+}
+#parallax-world-of-ugg .parallax-fiftysix {
+  background-image: url(/images/romeio-paul-ys8aaPlRb24-unsplash.jpg);
+}
+#parallax-world-of-ugg .parallax-fiftyseven {
+  background-image: url(/images/yash-kiran-WcofLAYtjSY-unsplash.jpg);
+}
+#parallax-world-of-ugg .parallax-fiftyeight {
+  background-image: url(/images/sp1.jpg);
+}
+#parallax-world-of-ugg .parallax-fiftynine {
+  background-image: url(/images/sp5.jpg);
+}
+#parallax-world-of-ugg .parallax-sixty {
+  background-image: url(/images/vivek-sharma-iZp-Ed5Moc8-unsplash.jpg);
+}
+#parallax-world-of-ugg .parallax-sixtyone {
+  background-image: url(/images/tr2.jpg);
+}
+#parallax-world-of-ugg .parallax-sixtytwo {
+  background-image: url(/images/tr4.jpg);
+}
+#btn-back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none;
+}
+.footer-basic {
+  padding: 20px 0;
+  background-color: transparent;
+  color: white;
+  margin: 10px;
+}
+
+.footer-basic ul {
+  padding: 0;
+  list-style: none;
+  text-align: center;
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 0;
+}
+
+.footer-basic li {
+  padding: 0 10px;
+}
+
+.footer-basic ul a {
+  color: inherit;
+  text-decoration: none;
+  opacity: 0.8;
+}
+
+.footer-basic ul a:hover {
+  opacity: 1;
+}
+
+.footer-basic .social {
+  text-align: center;
+}
+
+.footer-basic .social > a {
+  font-size: 24px;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+  margin: 0 8px;
+  color: inherit;
+  opacity: 0.75;
+}
+
+.footer-basic .social > a:hover {
+  opacity: 0.9;
+}
+
+.footer-basic .copyright {
+  margin-top: 15px;
+  text-align: center;
+  font-size: 13px;
+  color: #aaa;
+  margin-bottom: 0;
+}
+.list-group-item {
+  color: #fefeff;
+  text-decoration: none;
+  background: transparent;
+}
+
+.footer-basic.enquiry {
+  padding: 20px 0;
+  margin: 10px;
+  color: black;
+}
